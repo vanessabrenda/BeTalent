@@ -2,7 +2,7 @@
 ## Objetivo
   Esse documento tem por objetivo descrever quais estratégias foram usadas para validar os cenários de testes da plataforma de e-commerce Sauce Demo, garantindo a qualidade do sistema.
 ### Referência:
-  https://docs.google.com/forms/d/e/1FAIpQLSdp9Mzco3XIVOEZ4AIcefFYJ0r-i2Ywi2zvjBE_3pBO393oZA/formResponse?pli=1
+  [BeTalent - Teste prático](https://docs.google.com/forms/d/e/1FAIpQLSdp9Mzco3XIVOEZ4AIcefFYJ0r-i2Ywi2zvjBE_3pBO393oZA/formResponse?pli=1)
 ## Escopo de testes
 ### Tipos de testes utilizados
   1. Funcionais
