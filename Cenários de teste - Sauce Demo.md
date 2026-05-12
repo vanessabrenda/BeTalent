@@ -123,18 +123,15 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: Acessar o detalhe dos produtos - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
-| CT01.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
-| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-##### Consideração geral do cenário: 
-  Reprovado, diversas inconsistências encontradas no fluxo de detalhe do produto, evidências dos testes no documento: 
-  
+| CT01.1 | standard_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
+| CT01.2 | problem_user | Detalhe do produto apresentado corretamente. | Nenhum item foi apresentado corretamente. Todos apresentaram um produto diferente ou não apresentou item. |
+| CT01.3 | performance_glitch_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
+| CT01.4 | error_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
+| CT01.5 | visual_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta, a imagem do detalhe está correta.|
 ## Cenários Relevantes:
 ### Cenário 05: Permitir ordenação e filtragem de produtos
 ### Cenário 06: Permitir navegação entre páginas
-### Cenário 07: Layout apresentado
+### Cenário 07: Interface apresentada para o usuário
 ### Cenário 08: Tempo de carregamento entre as telas
 
 
