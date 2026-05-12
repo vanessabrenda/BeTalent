@@ -13,25 +13,21 @@
 | **Caso de teste** | **Usuário** | **Senha utilizada** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|-------------|---------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | secret_sauce | Apresenta a Tela home | Login realizado, tela home apresentada | [CT01.1](https://github.com/user-attachments/assets/646aee7b-d291-4da4-a316-4e17cb940ac9) |
-| CT01.2 | locked_out_user | secret_sauce | Não é realizado login. Mensagem de erro: Epic sadface: Sorry, this user has been locked out.| Login não realizado, mensagem de erro apresentada. |[CT01.1]()|
-| CT01.3 | problem_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
-| CT01.4 | performance_glitch_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
-| CT01.5 | error_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
-| CT01.6 | visual_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
+| CT01.2 | locked_out_user | secret_sauce | Não é realizado login. Mensagem de erro: Epic sadface: Sorry, this user has been locked out.| Login não realizado, mensagem de erro apresentada. |[CT01.2](https://github.com/user-attachments/assets/88688346-f51c-4326-901f-cccba699a07c)|
+| CT01.3 | problem_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.3](https://github.com/user-attachments/assets/db0d7cde-27cc-4358-852a-520c9465bc47)|
+| CT01.4 | performance_glitch_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.4](https://github.com/user-attachments/assets/28b1831b-a44b-402b-bedb-01abbac0b98c)|
+| CT01.5 | error_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.5](https://github.com/user-attachments/assets/8263084b-3e9d-488f-9509-edc6845d76ed)|
+| CT01.6 | visual_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.6](https://github.com/user-attachments/assets/64a5c198-97e7-4db4-9cce-9cd8ea22d23d)|
   
 #### Casos de teste 02: Login utilizando a senha incorreta para os usuários - Negativo
 | **Caso de teste** | **Usuário** | **Senha utilizada** | **Resultado esperado** | **Resultado obtido**|
 |------------|-------------|---------------|----------------|-----------|
-| CT02.1 | standard_user | teste1 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
-| CT02.2 | locked_out_user | teste123 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
-| CT02.3 | problem_user | teste1234 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
-| CT02.4 | performance_glitch_user | teste1234
-
-https://github.com/user-attachments/assets/13cf1a91-4cbe-44e2-adfb-cdfa90b2e592
-
-5 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
-| CT02.5 | error_user | teste1434 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
-| CT02.6 | visual_user | teste1435435 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
+| CT02.1 | standard_user | teste1 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.1](https://github.com/user-attachments/assets/5153c82d-6685-4d6a-b20f-fcde277537cf) |
+| CT02.2 | locked_out_user | teste123 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.2](https://github.com/user-attachments/assets/216b308e-427d-403f-bf49-a4b7bbb1d1df)|
+| CT02.3 | problem_user | teste1234 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.3](https://github.com/user-attachments/assets/80601640-1e7b-4181-baef-6f179654bfbc)|
+| CT02.4 | performance_glitch_user | teste12345 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.4](https://github.com/user-attachments/assets/339b00d9-2c6b-440a-9ac7-94152acdecc5)|
+| CT02.5 | error_user | teste1434 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.5](https://github.com/user-attachments/assets/e0a78ce4-bc29-4be0-8fa7-966e4ccd3fc8)|
+| CT02.6 | visual_user | teste1435435 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.6](https://github.com/user-attachments/assets/9aaf2c3a-b71a-49d5-8a91-8b95b74bcfc7)|
 ##### Consideração geral do cenário 
   Aprovado, o fluxo de login foi realizado, alguns erros foram encontrados em outros fluxos. Evidências dos testes: 
   
