@@ -97,6 +97,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.
 
 #### Casos de teste 1: Realizar logout - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
 | CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
 | CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
 | CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. |
@@ -104,6 +106,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
 
 #### Casos de teste 2: Realizar login após realizar um logout de outro usuário - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
 | CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
 | CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
@@ -116,6 +120,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário acessa o detalhe dos produtos,
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.
 #### Casos de teste 1: Realizar login após realizar um logout de outro usuário - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
 | CT01.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
 | CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
