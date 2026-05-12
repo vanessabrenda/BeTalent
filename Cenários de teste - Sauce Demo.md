@@ -113,13 +113,14 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT02.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-
+##### Consideração geral do cenário: 
+  Reprovado, diversas inconsistências encontradas no fluxo de Logout, evidências dos testes no documento: 
 ### Esquema do Cenário 05: Detalhe dos produtos
 
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário acessa o detalhe dos produtos,
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.
-#### Casos de teste 1: Realizar login após realizar um logout de outro usuário - Positivo
+#### Casos de teste 1: Acessar o detalhe dos produtos - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
 | CT01.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
@@ -127,7 +128,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-
+##### Consideração geral do cenário: 
+  Reprovado, diversas inconsistências encontradas no fluxo de detalhe do produto, evidências dos testes no documento: 
+  
 ## Cenários Relevantes:
 ### Cenário 05: Permitir ordenação e filtragem de produtos
 ### Cenário 06: Permitir navegação entre páginas
