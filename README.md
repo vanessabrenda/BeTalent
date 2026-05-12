@@ -9,7 +9,8 @@
   6. Considerações finais
      
 ### Descrição 
-  1. Validação da plataforma Sauce Demo e a API Restful-Booker.
+  1. Validação da plataforma Sauce Demo
+  2. Validação da API Restful-Booker.
 ### Requisitos para execução
   1. Node.js
   2. Google Chrome
