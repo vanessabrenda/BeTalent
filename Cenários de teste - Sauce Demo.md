@@ -29,7 +29,7 @@
 | CT02.5 | error_user | teste1434 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
 | CT02.6 | visual_user | teste1435435 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. |
 ##### Consideração geral do cenário 
-  Aprovado, o fluxo de login foi realizado, alguns erros foram encontrados em outros fluxos. Evidências dos testes no documento: 
+  Aprovado, o fluxo de login foi realizado, alguns erros foram encontrados em outros fluxos. Evidências dos testes: 
   
 ### Esquema do cenário 02: Fluxo de compras
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
@@ -124,7 +124,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
 | CT01.1 | standard_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
-| CT01.2 | problem_user | Detalhe do produto apresentado corretamente. | Nenhum item foi apresentado corretamente. Todos apresentaram um produto diferente ou não apresentou item. |
+| CT01.2 | problem_user | Detalhe do produto apresentado corretamente. | Nenhum item foi apresentado corretamente na tela home e nos detalhes, na tela home a imagem está incorreta, no detalhe apresenta um item diferente ou não apresentou item. |
 | CT01.3 | performance_glitch_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.4 | error_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.5 | visual_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma, a imagem do detalhe está correta.|
