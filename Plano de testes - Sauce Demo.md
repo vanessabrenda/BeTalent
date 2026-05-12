@@ -27,6 +27,8 @@
   5. Evidências dos testes de acessibilidade
   6. Script das automações em Playwright
 ## Informações relevantes
-  **Data início:** 12/05/2026/n
-  **Data fim:** 13/05/2026/n
+  **Data início:** 12/05/2026    
+  
+  **Data fim:** 13/05/2026   
+  
   **Responsável:** Vanessa Brenda Silva Sobrinho Aires
