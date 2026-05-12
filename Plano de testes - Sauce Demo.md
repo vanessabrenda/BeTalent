@@ -16,7 +16,7 @@
   **Testes automatizados:** VSCode, Playwright, Chrome, Node.js   
   **Ambiente de homologação:** https://www.saucedemo.com/   
 ## Casos de testes
-  Os casos de testes foram documentos no documento a seguir: 
+  Os casos de testes foram documentos no documento a seguir: https://github.com/vanessabrenda/BeTalent/blob/da0dc0f3e6d3cfb988511646545b3d0b19ef3525/Cen%C3%A1rios%20de%20teste%20-%20Sauce%20Demo.md
 ## Critérios de aceite
   Os cenários da seção "Cenários críticos" precisam funcionar em 100% dos casos. O restante dos casos poderão apresentar inconsistências, mas não bloqueará o uso do sistema.
 ## Documentos gerados
