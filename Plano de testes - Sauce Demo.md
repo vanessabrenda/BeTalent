@@ -29,6 +29,6 @@
 ## Informações relevantes
   **Data início:** 12/05/2026    
   
-  **Data fim:** 13/05/2026   
+  **Data fim:** 17/05/2026   
   
   **Responsável:** Vanessa Brenda Silva Sobrinho Aires
