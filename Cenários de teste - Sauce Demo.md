@@ -1,4 +1,4 @@
-# Testes funcionais
+# Testes funcionais e não funcionais
 # Ambiente 
 [Sauce Demo](https://www.saucedemo.com/)
 ## Cenários Críticos
@@ -81,25 +81,54 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: Remoção de itens do carrinho - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
-| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso nas duas telas, home e do carrinho. |
+| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. |
 | CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção.|
-| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso. |
+| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. |
 | CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. |
-| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso, layout fora dos padrões.|
+| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões.|
 
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de remoção de itens, evidências dos testes no documento: 
 
-### Cenério 04: Logout
+### Esquema do Cenário 04: Logout do sistema
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário acessa o menu lateral esquerdo,
+**E** clica em 'Logout',
+**ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.
+
+#### Casos de teste 1: Realizar logout - Positivo
+| CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. |
+| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+| CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+
+#### Casos de teste 2: Realizar login após realizar um logout de outro usuário - Positivo
+| CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
+| CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT02.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+
+### Esquema do Cenário 05: Detalhe dos produtos
+
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário acessa o detalhe dos produtos,
+**ENTÃO** o sistema exibe o detalhe do produto escolhido.
+#### Casos de teste 1: Realizar login após realizar um logout de outro usuário - Positivo
+| CT01.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
+| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 
 ## Cenários Relevantes:
 ### Cenário 05: Permitir ordenação e filtragem de produtos
 ### Cenário 06: Permitir navegação entre páginas
 ### Cenário 07: Layout apresentado
+### Cenário 08: Tempo de carregamento entre as telas
 
-## Cenários Opcionais:
-### Cenário 08: Carregamento das telas menor que 03 segundos
-### Cenário 09: Fluxo de finalização de compras em 3 cliques ao entrar no carrinho
+
 
 
 # Testes de acessibilidade
