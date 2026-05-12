@@ -10,11 +10,11 @@
   3. Acessibilidade
   4. Automatizados
 ###  Estratégia de Testes
-  **Testes funcionais:** Linguagem BDD
-  **Testes de responsividade:** DevTools do Chrome
-  **Testes de acessibilidade:** NVDA
-  **Testes automatizados:** VSCode, Playwright, Chrome, Node.js
-  **Ambiente de homologação:** https://www.saucedemo.com/
+  **Testes funcionais:** Linguagem BDD   
+  **Testes de responsividade:** DevTools do Chrome   
+  **Testes de acessibilidade:** NVDA   
+  **Testes automatizados:** VSCode, Playwright, Chrome, Node.js   
+  **Ambiente de homologação:** https://www.saucedemo.com/   
 ## Casos de testes
   Os casos de testes foram documentos no documento a seguir: 
 ## Critérios de aceite
