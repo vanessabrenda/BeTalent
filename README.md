@@ -22,11 +22,16 @@
 
   1. Faça o download do Node.js pelo site: https://nodejs.org/pt-br, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
   2. Faça o download do Chrome pelo site: https://www.google.com/intl/pt-BR/chrome/, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
-  3. Faça a instalação do Playwright seguindo os passos do vídeo a seguir: Abra o terminal (pesquise por cmd na aba de pesquisa e abra a primeira opção), crie uma pasta (mkdir projeto-playwright), entre nela (cd projeto-playwright) e execute o comando abaixo para iniciar a instalação: npm init playwright@latest, escolha a opção Javascript pressionando o botão para baixo do teclado e apertando enter, aperte enter por mais 3 vezes, verifique se a instalação deu certo usando o comando: npx playwright test, a instalação foi feita com sucesso se a seguinte mensagem aparecer:
-  Running 6 tests using 6 workers
-  6 passed (7.6s)
-  To open last HTML report run:
-  npx playwright show-report;
+  3. Faça a instalação do Playwright seguindo os passos do vídeo a seguir:     
+     Abra o terminal (pesquise por cmd na aba de pesquisa e abra a primeira opção);     
+     Crie uma pasta (mkdir projeto-playwright);         
+     Entre nela (cd projeto-playwright);               
+     Eexecute o comando abaixo para iniciar a instalação: npm init playwright@latest, escolha a opção Javascript pressionando o botão para baixo do teclado e apertando enter, aperte enter por mais 3 vezes;              
+     Verifique se a instalação deu certo usando o comando: npx playwright test, a instalação foi feita com sucesso se a seguinte mensagem aparecer:               
+      Running 6 tests using 6 workers          
+      6 passed (7.6s)          
+      To open last HTML report run:         
+  npx playwright show-report;      
   5. Faça o download do VSCode pelo site: https://code.visualstudio.com/download, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
   6. Pesquise por Playwright na aba 'Extensions' do VSCode, abra a primeira opção e clicar em 'Install';
   7. Execute o PowerShell como adiministrador e execute o comando: PS C:\Users\LINQ> Set-ExecutionPolicy RemoteSigned. (Necessário para realizar a execução dos scripts da automação com visualização no navegador, caso não queira visualizar as automações no navegador, não é necessário executar o comando.)
