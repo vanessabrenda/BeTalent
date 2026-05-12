@@ -50,7 +50,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.2 | problem_user | Compra realizada, mensagem de sucesso exibida. |  O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar uma mensagem de erro foi exibida informando que o campo é obrigatório, não foi possível completar o fluxo de compra. |
 | CT01.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. |
 | CT01.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar a próxima tela foi exibida, mas ao clicar em 'Finish' o sistema não teve nenhuma ação. Não foi possível completar o fluxo de compra.|
-| CT01.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada, porém layout fora dos padrões. |
+| CT01.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, porém o usuário apresenta o preço errado na tela home. mensagem de sucesso apresentada, layout fora dos padrões.  |
 #### Casos de teste 2: Compra de todos os itens - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
@@ -75,7 +75,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 ### Esquema do Cenário 03: Remoção de itens do carrinho
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário insere um produto ou mais no carrinho,      
-**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,    
+**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,     
 **ENTÃO** o sistema retira o item do carrinho.
 
 #### Casos de teste 1: Remoção de itens do carrinho - Positivo
@@ -93,7 +93,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 ### Esquema do Cenário 04: Logout do sistema
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário acessa o menu lateral esquerdo,
-**E** clica em 'Logout',
+**E** clica em 'Logout',           
 **ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.
 
 #### Casos de teste 1: Realizar logout - Positivo
@@ -103,7 +103,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
 | CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. |
 | CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
-| CT01.5 | visual_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+| CT01.5 | visual_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
 
 #### Casos de teste 2: Realizar login após realizar um logout de outro usuário - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
@@ -112,14 +112,14 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
 | CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 | CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT02.5 | visual_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| CT02.5 | visual_user | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
 ##### Consideração geral do cenário: 
   Reprovado, diversas inconsistências encontradas no fluxo de Logout, evidências dos testes no documento: 
 ### Esquema do Cenário 05: Detalhe dos produtos
 
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
-**QUANDO** o usuário acessa o detalhe dos produtos,
-**ENTÃO** o sistema exibe o detalhe do produto escolhido.
+**QUANDO** o usuário acessa o detalhe dos produtos,         
+**ENTÃO** o sistema exibe o detalhe do produto escolhido.           
 #### Casos de teste 1: Acessar o detalhe dos produtos - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
 |------------|--------------|----------------|-----------|
@@ -127,12 +127,62 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.2 | problem_user | Detalhe do produto apresentado corretamente. | Nenhum item foi apresentado corretamente. Todos apresentaram um produto diferente ou não apresentou item. |
 | CT01.3 | performance_glitch_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.4 | error_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
-| CT01.5 | visual_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta, a imagem do detalhe está correta.|
+| CT01.5 | visual_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma, a imagem do detalhe está correta.|
+
 ## Cenários Relevantes:
-### Cenário 05: Permitir ordenação e filtragem de produtos
-### Cenário 06: Permitir navegação entre páginas
-### Cenário 07: Interface apresentada para o usuário
-### Cenário 08: Tempo de carregamento entre as telas
+### Esquema do Cenário 05: Permitir ordenação e filtragem de produtos
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário acessa o detalhe dos produtos,           
+**ENTÃO** o sistema exibe o detalhe do produto escolhido.      
+#### Casos de teste 1: ordenar os produtos por ordem alfabética - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
+| CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
+| CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. |
+| CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
+| CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
+| CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
+#### Casos de teste 2: ordenar os produtos por preço - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
+| CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
+| CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. |
+| CT02.3 | performance_glitch_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
+| CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
+| CT02.5 | visual_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. |
+#### Casos de teste 3: filtrar produtos - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
+| CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+| CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+| CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+| CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+| CT03.5 | visual_user  | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+### Esquema do Cenário 06: Tempo de carregamento entre as telas
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário navega entre as telas,         
+**ENTÃO** o sistema exibe a nova tela em menos de 3 segundos.           
+#### Casos de teste 1: Navegar pelo sistema - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
+| CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
+| CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
+| CT01.3 | performance_glitch_user  | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. |
+| CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
+| CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
+### Esquema do Cenário 07: Interface apresentada para o usuário
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário navega entre as telas,         
+**ENTÃO** o sistema exibe as telas com interface apropriada para o usuário.           
+#### Casos de teste 1: Interface apresentada para o usuário - Positivo
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
+|------------|--------------|----------------|-----------|
+| CT01.1 | standard_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. |
+| CT01.2 | problem_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema.|
+| CT01.3 | performance_glitch_user  | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço: Item total: $113.94999999999999|
+| CT01.4 | error_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999|
+| CT01.5 | visual_user |A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999 6. O primeiro item da tela home apresenta uma imagem incorreta. 7. Os botões: para acessar o carrinho, o 'Add to cart' do último item da home, 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos ostros usuários. |
+### Esquema do Cenário 08: Permitir navegação entre páginas
 
 
 
