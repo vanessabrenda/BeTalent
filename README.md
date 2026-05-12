@@ -18,7 +18,7 @@
   4. VSCode;
   5. Adicione a extensão do Playwright no VSCode pela aba Extensions
   6. Github;
-### Instalação das ferramentas
+### Instalação das ferramentas - UI Testing
 
   1. Faça o download do Node.js pelo site: https://nodejs.org/pt-br, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
   2. Faça o download do Chrome pelo site: https://www.google.com/intl/pt-BR/chrome/, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
