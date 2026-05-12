@@ -20,12 +20,12 @@
 ## Critérios de aceite
   Os cenários da seção "Cenários críticos" precisam funcionar em 100% dos casos. O restante dos casos poderão apresentar inconsistências, mas não bloqueará o uso do sistema.
 ## Documentos gerados
-  1. Plano de testes
-  2. Casos de testes
-  3. Evidências de testes manuais
-  4. Evidências de testes de responsividade
-  5. Evidências dos testes de acessibilidade
-  6. Script das automações em Playwright
+  1. [Plano de testes](https://github.com/vanessabrenda/BeTalent/blob/main/Plano%20de%20testes%20-%20Sauce%20Demo.md)
+  2. [Cenários de testes](https://github.com/vanessabrenda/BeTalent/blob/main/Cen%C3%A1rios%20de%20teste%20-%20Sauce%20Demo.md)
+  3. [Evidências de testes manuais]()
+  4. [Evidências de testes de responsividade]()
+  5. [Evidências dos testes de acessibilidade]()
+  6. [Script das automações em Playwright]()
 ## Informações relevantes
   **Data início:** 12/05/2026    
   
