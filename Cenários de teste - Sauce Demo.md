@@ -12,12 +12,12 @@
 
 | **Caso de teste** | **Usuário** | **Senha utilizada** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|-------------|---------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | secret_sauce | Apresenta a Tela home | Login realizado, tela home apresentada | (CT01.1)[] |
-| CT01.2 | locked_out_user | secret_sauce | Não é realizado login. Mensagem de erro: Epic sadface: Sorry, this user has been locked out.| Login não realizado, mensagem de erro apresentada. |(CT01.2)[]|
-| CT01.3 | problem_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |(CT01.3)[] |
-| CT01.4 | performance_glitch_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |(CT01.4)[]|
-| CT01.5 | error_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |(CT01.5)[]|
-| CT01.6 | visual_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |(CT01.6)[]|
+| CT01.1 | standard_user | secret_sauce | Apresenta a Tela home | Login realizado, tela home apresentada | [CT01.1](https://github.com/user-attachments/assets/646aee7b-d291-4da4-a316-4e17cb940ac9) |
+| CT01.2 | locked_out_user | secret_sauce | Não é realizado login. Mensagem de erro: Epic sadface: Sorry, this user has been locked out.| Login não realizado, mensagem de erro apresentada. |[CT01.1]()|
+| CT01.3 | problem_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
+| CT01.4 | performance_glitch_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
+| CT01.5 | error_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
+| CT01.6 | visual_user | secret_sauce | Apresenta a tela home | Login realizado, tela home apresentada. |[CT01.1]()|
   
 #### Casos de teste 02: Login utilizando a senha incorreta para os usuários - Negativo
 | **Caso de teste** | **Usuário** | **Senha utilizada** | **Resultado esperado** | **Resultado obtido**|
