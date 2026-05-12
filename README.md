@@ -16,6 +16,7 @@
   2. Google Chrome
   3. Playwright
   4. VSCode
+  5. Github
 ### Instalação das ferramentas
 ### Recomendações
   1. Sempre utilizar a opção "Abrir em uma nova aba", utilizando o botão direito do mouse nos links, principalmente nos vídeos anexados aos documentos.
