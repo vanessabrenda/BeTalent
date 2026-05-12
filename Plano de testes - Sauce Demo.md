@@ -22,6 +22,9 @@
 ## Documentos gerados
   1. [Plano de testes](https://github.com/vanessabrenda/BeTalent/blob/main/Plano%20de%20testes%20-%20Sauce%20Demo.md)
   2. [Cenários de testes e Resultado dos testes](https://github.com/vanessabrenda/BeTalent/blob/main/Cen%C3%A1rios%20de%20teste%20-%20Sauce%20Demo.md)
+  3. [Análise de Bugs]()
+  4. [Sugestões de melhorias] ()
+  5. [Análise de Riscos] ()
   6. [Script das automações em Playwright]()
 ## Informações relevantes
   **Data início:** 12/05/2026    
