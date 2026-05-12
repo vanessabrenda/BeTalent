@@ -19,5 +19,5 @@
   5. Github
 ### Instalação das ferramentas
 ### Recomendações
-  1. Sempre utilizar a opção "Abrir em uma nova aba" ou "Abrir em um novo separador", utilizando o botão direito do mouse nos links, principalmente nos vídeos anexados aos documentos.
+  1. Sempre utilizar a opção "Abrir em uma nova aba" ou "Abrir num novo separador", utilizando o botão direito do mouse nos links, principalmente nos vídeos anexados aos documentos.
   
