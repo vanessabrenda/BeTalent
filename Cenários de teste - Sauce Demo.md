@@ -79,14 +79,6 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário insere um produto ou mais no carrinho,        
 **E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,         
 **ENTÃO** o sistema retira o item do carrinho.        
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
-|------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1]() |
-| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.2]() |
-| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.3]() |
-| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4]() |
-| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
-
 
 #### Casos de teste 1: Remoção de itens do carrinho - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|**Evidência**|
