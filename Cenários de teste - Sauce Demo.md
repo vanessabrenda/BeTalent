@@ -75,10 +75,10 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 ### Esquema do Cenário 03: Remoção de itens do carrinho
 
-**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,
-**QUANDO** o usuário insere um produto ou mais no carrinho,       
-**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,
-**ENTÃO** o sistema retira o item do carrinho.
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,          
+**QUANDO** o usuário insere um produto ou mais no carrinho,        
+**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,         
+**ENTÃO** o sistema retira o item do carrinho.        
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1]() |
@@ -97,15 +97,14 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4]() |
 | CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
 
-
 ##### Consideração geral do cenário 
-  Reprovado, diversas inconsistências encontradas no fluxo de remoção de itens, evidências dos testes no documento: 
+  Reprovado, diversas inconsistências encontradas no fluxo de remoção de itens.
 
 ### Esquema do Cenário 04: Logout do sistema
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
-**QUANDO** o usuário acessa o menu lateral esquerdo,
+**QUANDO** o usuário acessa o menu lateral esquerdo,          
 **E** clica em 'Logout',           
-**ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.
+**ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.              
 
 #### Casos de teste 1: Realizar logout - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
