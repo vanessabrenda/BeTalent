@@ -43,14 +43,14 @@
 Thank you for your order!    
 Your order has been dispatched, and will arrive just as fast as the pony can get there!    
 
-#### Casos de teste 1: Compra de 01 item - Positivo
+#### Casos de teste 1: Compra de item - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user           | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.1]() |
-| CT01.2 | problem_user            | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar uma mensagem de erro foi exibida informando que o campo é obrigatório, não foi possível completar o fluxo de compra. | [CT01.2]() |
-| CT01.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.3]() |
-| CT01.4 | error_user              | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar a próxima tela foi exibida, mas ao clicar em 'Finish' o sistema não teve nenhuma ação. Não foi possível completar o fluxo de compra. | [CT01.4]() |
-| CT01.5 | visual_user             | Compra realizada, mensagem de sucesso exibida. | Compra realizada, porém o usuário apresenta o preço errado na tela home. mensagem de sucesso apresentada, layout fora dos padrões. | [CT01.5]() |
+| CT01.1 | standard_user           | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.1](https://github.com/user-attachments/assets/99607cce-5f7f-4c6d-ad16-62aa37c63019) |
+| CT01.2 | problem_user            | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar uma mensagem de erro foi exibida informando que o campo é obrigatório, não foi possível completar o fluxo de compra. | [CT01.2](https://github.com/user-attachments/assets/643c22b4-63df-44e5-863e-299c5aa97cee) |
+| CT01.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.3](https://github.com/user-attachments/assets/13a136b2-74fa-4d1c-8af1-c1f262e17bc7) |
+| CT01.4 | error_user              | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar a próxima tela foi exibida, mas ao clicar em 'Finish' o sistema não teve nenhuma ação. Não foi possível completar o fluxo de compra. | [CT01.4](https://github.com/user-attachments/assets/2382f6a5-debe-4d1b-a89b-9a46fb942f64) |
+| CT01.5 | visual_user             | Compra realizada, mensagem de sucesso exibida. | Compra realizada, porém o usuário apresenta o preço errado na tela home. mensagem de sucesso apresentada, layout fora dos padrões. | [CT01.5](https://github.com/user-attachments/assets/53f685df-472c-4337-a8f1-909182c131e9) |
 #### Casos de teste 2: Compra de todos os itens - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
@@ -139,6 +139,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.3 | performance_glitch_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.4 | error_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.5 | visual_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma, a imagem do detalhe está correta.|
+##### Consideração geral do cenário 
+  Reprovado, diversas inconsistências encontradas no detalhe dos produtos.
 
 ## Cenários Relevantes:
 
@@ -174,7 +176,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.4]() |
 | CT03.5 | visual_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.5]() |
 
----
+##### Consideração geral do cenário 
+  Reprovado, diversas inconsistências encontradas no fluxo de ordenação.
 
 ### Esquema do Cenário 07: Tempo de carregamento entre as telas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
@@ -189,6 +192,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.3 | performance_glitch_user | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. | [CT01.3]() |
 | CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.4]() |
 | CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.5]() |
+##### Consideração geral do cenário 
+  Aprovado com ressalva, necessário ajustar o usuário performance_glitch_user.
+
 ### Esquema do Cenário 08: Interface apresentada para o usuário
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
@@ -203,7 +209,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.4 | error_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999| [CT01.4]() |
 | CT01.5 | visual_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999 6. O primeiro item da tela home apresenta uma imagem incorreta. 7. Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos outros usuários. | [CT01.5]() |
 
----
+##### Consideração geral do cenário         
+  O Layout não é impeditivo para entrega, porém está apresentando diversas falhas, por isso é de alta prioridade para ajuste. 
 
 ### Esquema do Cenário 09: Permitir navegação entre páginas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
@@ -218,6 +225,10 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.3]() |
 | CT01.4 | error_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.4]() |
 | CT01.5 | visual_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.5]() |
+
+##### Consideração geral do cenário 
+  Aprovado, apenas um botão funciona fora do padrão, verificar possibilidade de ajuste.
+
 
 # Testes de acessibilidade
 ## Cenários Opcionais - utilizando o NVDA:
