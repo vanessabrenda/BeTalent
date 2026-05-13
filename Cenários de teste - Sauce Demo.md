@@ -144,29 +144,29 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: ordenar os produtos por ordem alfabética - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.1]() |
-| CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. | [CT01.2]() |
-| CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.3]() |
-| CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT01.4]() |
-| CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.5]() |
+| CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.1](https://github.com/user-attachments/assets/9d07b5e3-9063-4f8c-be0f-2c18371d9e88) |
+| CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. | [CT01.2](https://github.com/user-attachments/assets/72773547-5b05-4b12-a704-c6907e336fa4) |
+| CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.3](https://github.com/user-attachments/assets/05674d42-78dc-4ea4-8507-76ab5178933b) |
+| CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT01.4](https://github.com/user-attachments/assets/c27617a9-345e-4836-ad52-129b26204b52) |
+| CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.5](https://github.com/user-attachments/assets/6824c7f4-b078-4b2f-bb8f-0f6c15db0b6a) |
 
 #### Casos de teste 2: ordenar os produtos por preço - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. | [CT02.1]() |
-| CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. | [CT02.2]() |
-| CT02.3 | performance_glitch_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso.| [CT02.3]() |
-| CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT02.4]() |
-| CT02.5 | visual_user | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. | [CT02.5]() |
+| CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. | [CT02.1](https://github.com/user-attachments/assets/fa1999db-9dd1-4be2-b14d-d618b4e6c8be) |
+| CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. | [CT02.2](https://github.com/user-attachments/assets/5362d9d9-055c-4fcb-9849-f3c6af95d952) |
+| CT02.3 | performance_glitch_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso.| [CT02.3](https://github.com/user-attachments/assets/6de79bd9-bbaf-4c2d-b1f9-3766ade3b7c9) |
+| CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT02.4](https://github.com/user-attachments/assets/e5ee81df-30af-4841-9da3-1d4d99e0deaa) |
+| CT02.5 | visual_user | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. | [CT02.5](https://github.com/user-attachments/assets/8208a6cd-7d7c-432e-94a7-f334d8e77d7b) |
 
 #### Casos de teste 3: filtrar produtos - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.1]() |
-| CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.2]() |
-| CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.3]() |
-| CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.4]() |
-| CT03.5 | visual_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.5]() |
+| CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT03](https://github.com/user-attachments/assets/1627e32a-82a0-4670-835f-8ebda01e344a) |
+| CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT03](https://github.com/user-attachments/assets/1627e32a-82a0-4670-835f-8ebda01e344a) |
+| CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT03](https://github.com/user-attachments/assets/1627e32a-82a0-4670-835f-8ebda01e344a) |
+| CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT03](https://github.com/user-attachments/assets/1627e32a-82a0-4670-835f-8ebda01e344a) |
+| CT03.5 | visual_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT03](https://github.com/user-attachments/assets/1627e32a-82a0-4670-835f-8ebda01e344a) |
 
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de ordenação.
@@ -179,11 +179,11 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: Navegar pelo sistema - Positivo 
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.1]() |
-| CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente.| [CT01.2]() |
-| CT01.3 | performance_glitch_user | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. | [CT01.3]() |
-| CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.4]() |
-| CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.5]() |
+| CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | As evidências dos outros cenários mostram o baixo tempo de carregamento para esse usuário. |
+| CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente.|  As evidências dos outros cenários mostram o baixo tempo de carregamento para esse usuário. |
+| CT01.3 | performance_glitch_user | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. | [CT01.3](https://github.com/user-attachments/assets/e2b4f71c-c6f3-4267-bb77-197e3ae343a9) |
+| CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |  As evidências dos outros cenários mostram o baixo tempo de carregamento para esse usuário. |
+| CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |  As evidências dos outros cenários mostram o baixo tempo de carregamento para esse usuário. |
 ##### Consideração geral do cenário 
   Aprovado com ressalva, necessário ajustar o usuário performance_glitch_user.
 
