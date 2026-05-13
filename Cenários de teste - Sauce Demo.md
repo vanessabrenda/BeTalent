@@ -44,48 +44,59 @@ Thank you for your order!
 Your order has been dispatched, and will arrive just as fast as the pony can get there!    
 
 #### Casos de teste 1: Compra de 01 item - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT01.1 | standard_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. |
-| CT01.2 | problem_user | Compra realizada, mensagem de sucesso exibida. |  O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar uma mensagem de erro foi exibida informando que o campo é obrigatório, não foi possível completar o fluxo de compra. |
-| CT01.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. |
-| CT01.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar a próxima tela foi exibida, mas ao clicar em 'Finish' o sistema não teve nenhuma ação. Não foi possível completar o fluxo de compra.|
-| CT01.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, porém o usuário apresenta o preço errado na tela home. mensagem de sucesso apresentada, layout fora dos padrões.  |
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT01.1 | standard_user           | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.1]() |
+| CT01.2 | problem_user            | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar uma mensagem de erro foi exibida informando que o campo é obrigatório, não foi possível completar o fluxo de compra. | [CT01.2]() |
+| CT01.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT01.3]() |
+| CT01.4 | error_user              | Compra realizada, mensagem de sucesso exibida. | O campo 'last name' estava bloqueado para preenchimento, ao clicar em continuar a próxima tela foi exibida, mas ao clicar em 'Finish' o sistema não teve nenhuma ação. Não foi possível completar o fluxo de compra. | [CT01.4]() |
+| CT01.5 | visual_user             | Compra realizada, mensagem de sucesso exibida. | Compra realizada, porém o usuário apresenta o preço errado na tela home. mensagem de sucesso apresentada, layout fora dos padrões. | [CT01.5]() |
 #### Casos de teste 2: Compra de todos os itens - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT02.1 | standard_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. |
-| CT02.2 | problem_user | Compra realizada, mensagem de sucesso exibida. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. |
-| CT02.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. |
-| CT02.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. |
-| CT02.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada, porém layout fora dos padrões. |
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT02.1 | standard_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. | [CT02.1]() |
+| CT02.2 | problem_user | Compra realizada, mensagem de sucesso exibida. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.2]() |
+| CT02.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT02.3]() |
+| CT02.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.4]() |
+| CT02.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada, porém layout fora dos padrões. | [CT02.5]() |
 
 #### Casos de teste 3: Compra de 0 item - Negativo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |
-| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |
-| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |
-| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |
-| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.1]() |
+| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.2]() |
+| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.3]() |
+| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.4]() |
+| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.5]() |
+
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de compras, evidências dos testes no documento: 
 
 
 ### Esquema do Cenário 03: Remoção de itens do carrinho
-**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
-**QUANDO** o usuário insere um produto ou mais no carrinho,      
-**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,     
+
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,
+**QUANDO** o usuário insere um produto ou mais no carrinho,       
+**E** clica em 'Remove' na tela home ou clica em 'Remove' na tela do carrinho,
 **ENTÃO** o sistema retira o item do carrinho.
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1]() |
+| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.2]() |
+| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.3]() |
+| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4]() |
+| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
+
 
 #### Casos de teste 1: Remoção de itens do carrinho - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. |
-| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção.|
-| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. |
-| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. |
-| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões.|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|**Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1]() |
+| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.2]() |
+| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.3]() |
+| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4]() |
+| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
+
 
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de remoção de itens, evidências dos testes no documento: 
@@ -97,22 +108,23 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **ENTÃO** o sistema encerra a sessão e redireciona para a tela de login.
 
 #### Casos de teste 1: Realizar logout - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
-| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
-| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. |
-| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
-| CT01.5 | visual_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. |
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.1]() |
+| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.2]() |
+| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. | [CT01.3]() |
+| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.4]() |
+| CT01.5 | visual_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.5]() |
 
 #### Casos de teste 2: Realizar login após realizar um logout de outro usuário - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
-| CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. |
-| CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
-| CT02.5 | visual_user | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. |
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
+| CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.1]() |
+| CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. | [CT02.2]() |
+| CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.3]() |
+| CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.4]() |
+| CT02.5 | visual_user | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.5]() |
+
 ##### Consideração geral do cenário: 
   Reprovado, diversas inconsistências encontradas no fluxo de Logout, evidências dos testes no documento: 
 ### Esquema do Cenário 05: Detalhe dos produtos
@@ -121,8 +133,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário acessa o detalhe dos produtos,         
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.           
 #### Casos de teste 1: Acessar o detalhe dos produtos - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|**Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
 | CT01.2 | problem_user | Detalhe do produto apresentado corretamente. | Nenhum item foi apresentado corretamente na tela home e nos detalhes, na tela home a imagem está incorreta, no detalhe apresenta um item diferente ou não apresentou item. |
 | CT01.3 | performance_glitch_user  | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente. |
@@ -135,24 +147,24 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário acessa o detalhe dos produtos,           
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.      
 #### Casos de teste 1: ordenar os produtos por ordem alfabética - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
 | CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. |
 | CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
 | CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
 | CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
 #### Casos de teste 2: ordenar os produtos por preço - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
 | CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. |
 | CT02.3 | performance_glitch_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
 | CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
 | CT02.5 | visual_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. |
 #### Casos de teste 3: filtrar produtos - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
 | CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
 | CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
@@ -162,9 +174,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe a nova tela em menos de 3 segundos.           
-#### Casos de teste 1: Navegar pelo sistema - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+#### Casos de teste 1: Navegar pelo sistema - Positivo 
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
 | CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
 | CT01.3 | performance_glitch_user  | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. |
@@ -175,8 +187,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe as telas com interface apropriada para o usuário.           
 #### Casos de teste 1: Interface apresentada para o usuário - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. |
 | CT01.2 | problem_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema.|
 | CT01.3 | performance_glitch_user  | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço: Item total: $113.94999999999999|
@@ -187,8 +199,8 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **QUANDO** o usuário navega entre as telas usando os botões de navegação localizados na parte inferir da tela: 'Continue Shopping', 'Checkout', 'Cancel', 'Continue', 'Finish' e 'Back Home',         
 **ENTÃO** o sistema redireciona o usuário para a tela correspondente ao botão clicado.           
 #### Casos de teste 1: Navegar pelo sistema usando os botões da parte inferior da tela - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|
-|------------|--------------|----------------|-----------|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+|------------|--------------|----------------|-----------|-----------|
 | CT01.1 | standard_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (Retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (Retorna para a tela anterior).|
 | CT01.2 | problem_user | A tela é redirecionada para a tela correspondente. | Não foi possível completar o fluxo devido ao erro de não poder inserir o Last Name no Checkout. |
 | CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior).|
