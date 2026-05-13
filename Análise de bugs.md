@@ -26,14 +26,14 @@ https://github.com/user-attachments/assets/53f685df-472c-4337-a8f1-909182c131e9
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
-|BC04| Botão 'Add to cart' sem ação na tela home. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não podem ser adicionados no carrinho, botão 'Add to cart' está sem ação.| Fluxo de compras | problem_user |1. Logar com o usuário problem_user . 2. Clicar em 'Add to cart' nos itens  Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket. | Ajustar funcionalidade 'Add to cart'. | Pendente. |
+|BC04| Botão 'Add to cart' sem ação na tela home e no detalhe do item. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Test.allTheThings() T-Shirt (Red) não podem ser adicionados no carrinho, botão 'Add to cart' está sem ação na tela home e no detalhe do item.| Fluxo de compras | error_user |1. Logar com o usuário error_user . 2. Clicar em 'Add to cart' nos itens  Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Test.allTheThings() T-Shirt (Red). | Ajustar funcionalidade 'Add to cart' na home e no detalhe do item. | Pendente. |
 
 #### Evidência do erro:
-https://github.com/user-attachments/assets/59c3d785-1527-4509-aee5-8679a442c37d
+https://github.com/user-attachments/assets/e6a60b47-70e6-42fe-9077-26cbef29040a
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
-|BC05| Botão 'Add to cart' sem ação na tela home. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não podem ser adicionados no carrinho, botão 'Add to cart' está sem ação.| Fluxo de compras | error_user |1. Logar com o usuário error_user . 2. Clicar em 'Add to cart' nos itens  Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket. | Ajustar funcionalidade 'Add to cart'. | Pendente. |
+|BC05| Botão 'Add to cart' sem ação na tela home e no detalhe do produto. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Test.allTheThings() T-Shirt (Red) não podem ser adicionados no carrinho, botão 'Add to cart' está sem ação.| Fluxo de compras | problem_user |1. Logar com o usuário problem_user . 2. Clicar em 'Add to cart' nos itens  Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket. | Ajustar funcionalidade 'Add to cart'. | Pendente. |
 
 #### Evidência do erro:
 https://github.com/user-attachments/assets/e065d915-3d88-4c6f-9f0d-78262e19d4d7
@@ -44,6 +44,19 @@ https://github.com/user-attachments/assets/e065d915-3d88-4c6f-9f0d-78262e19d4d7
 
 #### Evidência do erro:
 https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BC07| Itens errados na tela home. | Nenhum item foi apresentado corretamente na tela home e nos detalhes, na tela home a imagem está incorreta, no detalhe apresenta um item diferente ou não apresentou item. | Fluxo de compras | problem_user | 1. Logar com o usuário problem_user. 2. Verificar os itens exibidos na tela home. 3. Clicar em algum item para verificar o detalhe dele. | Ajustar a exibição dos itens para o usuário problem_user. | Pendente. |
+
+#### Evidência do erro:
+https://github.com/user-attachments/assets/dbec0946-4039-4c8d-ad48-3a3f9375e70f
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BC08| Descrição dos itens incorretas. | Nenhum item teve o detalhe apresentado corretamente no campo de descrição. | Fluxo de compras | error_user | 1. Logar com o usuário error_user. 2. Verificar os itens exibidos na tela home. 3. Clicar em algum item para verificar o detalhe dele. | Ajustar a exibição das descrições para o usuário error_user. | Pendente. |
+
+#### Evidência do erro:
+https://github.com/user-attachments/assets/ec6e33f2-b62f-4956-92f8-eebdf6d5bc30
 
 ## Bugs Altos
 
@@ -63,5 +76,11 @@ https://github.com/user-attachments/assets/ba876995-2b6b-467a-b5ff-42c306ba9697
 #### Evidência do erro do error_user:
 https://github.com/user-attachments/assets/9c6d5f39-329b-442c-a3f6-591f52df762c
 
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA03| O primeiro item da tela home exibe uma imagem errada | A imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma), a imagem do detalhe está correta. | Fluxo de compras | visual_user | 1. Logar com o usuário visual_user. 2. Verificar primeiro item exibido na tela home. | Ajustar a exibição do primeiro item para o visual_user | Pendente. |
+
+#### Evidência do erro:
+https://github.com/user-attachments/assets/40c3c937-300e-4d43-b3ab-65c73ad764b4
 
 
