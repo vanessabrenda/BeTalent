@@ -78,9 +78,57 @@ https://github.com/user-attachments/assets/9c6d5f39-329b-442c-a3f6-591f52df762c
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
-|BA03| O primeiro item da tela home exibe uma imagem errada | A imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma), a imagem do detalhe está correta. | Fluxo de compras | visual_user | 1. Logar com o usuário visual_user. 2. Verificar primeiro item exibido na tela home. | Ajustar a exibição do primeiro item para o visual_user | Pendente. |
+|BA03| O primeiro item da tela home exibe uma imagem errada. | A imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma), a imagem do detalhe está correta. | Fluxo de compras | visual_user | 1. Logar com o usuário visual_user. 2. Verificar primeiro item exibido na tela home. | Ajustar a exibição do primeiro item para o visual_user. | Pendente. |
 
 #### Evidência do erro:
 https://github.com/user-attachments/assets/40c3c937-300e-4d43-b3ab-65c73ad764b4
 
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA04| Alterar o tipo de ordenação indisponível | Modificar o tipo de ordenação está indisponível. | Ordenação e filtragem | problem_user | 1. Logar com o usuário problem_user. 2. Seleciona cada uma das possibilidades de ordenação. 3. Verificar que nenhuma ação acontece. | Ajustar a ordenação para o usuário | Pendente. |
+
+#### Evidências do erro - Ordem alfabética:
+https://github.com/user-attachments/assets/72773547-5b05-4b12-a704-c6907e336fa4
+
+#### Evidências do erro - Preço:
+https://github.com/user-attachments/assets/5362d9d9-055c-4fcb-9849-f3c6af95d952
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA05| Alterar o tipo de ordenação indisponível. | Ao modificar o tipo de ordenação o sistema apresenta mensagem de erro. | Ordenação e filtragem | error_user | 1. Logar com o usuário error_user. 2. Seleciona cada uma das possibilidades de ordenação. 3. Verificar que apresenta uma mensagem de erro. | Ajustar a ordenação para o usuário | Pendente. |
+
+#### Evidências do erro - Ordem alfabética:
+https://github.com/user-attachments/assets/c27617a9-345e-4836-ad52-129b26204b52
+#### Evidências do erro - Preço:
+https://github.com/user-attachments/assets/e5ee81df-30af-4841-9da3-1d4d99e0deaa
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA06| Botões fora de posição para visual_user. | Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos outros usuários. | Fluxo de compra | visual_user | 1. Logar com o usuário visual_user. 2. Prosseguir com os fluxos de com0pra. | Ajustar layout para o usuário. | Pendente. |
+
+#### Evidências do erro:
+https://github.com/user-attachments/assets/7901c4b5-f8fc-416a-a3d1-8239c5a4ee1e
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA07| Corte na tela mensagem de erro quando digita uma senha incorreta. | Acontece no Chrome e Firefox: Na tela de login, a mensagem de erro apresentada quando digita uma senha incorreta está sendo cortada. | Fluxo de Login | Todos | 1. Tentar Logar com qualquer usuário. 2. Inserir a senha incorreta. 3. Verificar mensagem de erro. | Redimensionar mensagem. | Pendente. |
+
+## Bugs Moderados
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BM01| Lentidão no usuário performance_glitch_user | Ao acessar a tela home do usuário performance_glitch_user o sistema trava por alguns segundos até apresentar a tela. | Usabilidade | performance_glitch_user | 1. Logar com o usuário performance_glitch_user. 2. realizar ações na tela home. 3. Verificar o tempo de resposta.. | Verificar o que está causando a lentidão para o usuário e ajustar. | Pendente. |
+
+#### Evidências do erro - Ordem alfabética:
+https://github.com/user-attachments/assets/e2b4f71c-c6f3-4267-bb77-197e3ae343a9
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BM02| Preço exibido no Checkout aparece mais caracteres na casa dos centavos: Item total: $113.94999999999999. | Na última tela de checkout, onde finaliza a compra, quando há 5 itens no carrinho, o Preço exibido no Checkout aparece mais caracteres na casa dos centavos: Item total: $113.94999999999999. | Fluxo de compra | Todos | 1. Logar com qualquer usuário. 2. Adicionar 5 itens ao carrinho. 3. Prosseguir até a tela de checkout 4. Verificar preço exibido no fim da página. | Ajustar a soma dos itens quando adiciona 5 itens | Pendente. |
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BM03| Corte na tela mensagem de erro quando digita uma senha incorreta. | Acontece no Chrome e Firefox: Na tela de login, a mensagem de erro apresentada quando digita uma senha incorreta está sendo cortada. | Fluxo de Login | Todos | 1. Tentar Logar com qualquer usuário. 2. Inserir a senha incorreta. 3. Verificar mensagem de erro. | Redimensionar mensagem. | Pendente. |
+
+#### Evidências do erro item BM02 e BM03:
+https://github.com/user-attachments/assets/2de74b1b-a55c-4459-bef4-fbef1792726b
 
