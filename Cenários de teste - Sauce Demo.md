@@ -236,7 +236,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 ### Esquema do Cenário 10: Permitir acionar função 'Reset App State'
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário abre o menu lateral esquerdo,        
-**E** clica na opção 'Reset App State',
+**E** clica na opção 'Reset App State',              
 **ENTÃO** o sistema reseta o aplicativo zerando todas as informações inseridas nele.
 
 #### Inconsistência na funcionalidade: acontece em todos os usuários
