@@ -247,4 +247,6 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 ##### Evidência do cenário de resete: [Cenário10](https://github.com/user-attachments/assets/12c32634-4808-4188-8f65-31b165242802)
 
+### Para verificar os bugs e os detalhes sobre eles acessar o documento: [Análise de bugs](https://github.com/vanessabrenda/BeTalent/edit/main/An%C3%A1lise%20de%20bugs.md#an%C3%A1lise-de-bugs)
+
 
