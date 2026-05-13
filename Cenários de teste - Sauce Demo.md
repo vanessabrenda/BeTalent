@@ -101,20 +101,20 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: Realizar logout - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.1]() |
-| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.2]() |
-| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. | [CT01.3]() |
-| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.4]() |
-| CT01.5 | visual_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.5]() |
+| CT01.1 | standard_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.1](https://github.com/user-attachments/assets/39ec6899-70d8-48ca-b270-ecb0e5367105) |
+| CT01.2 | problem_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.2](https://github.com/user-attachments/assets/1aba696c-9e6f-4a9b-b47c-97c422e9f32f) |
+| CT01.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | ILogout realizado, apresenta tela de login. | [CT01.3](https://github.com/user-attachments/assets/aa56321f-02a2-41c7-ad6a-cb214294ea97) |
+| CT01.4 | error_user  | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.4](https://github.com/user-attachments/assets/f0bc5e29-e215-4f90-8408-27766ee2a5b0) |
+| CT01.5 | visual_user | Logout realizado, apresenta tela de login. | Logout realizado, apresenta tela de login. | [CT01.5](https://github.com/user-attachments/assets/85af7c1e-1af1-4fb4-88a3-7821d1ac9fb6) |
 
 #### Casos de teste 2: Realizar login após realizar um logout de outro usuário - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.1]() |
-| CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários. | [CT02.2]() |
-| CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.3]() |
-| CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.4]() |
-| CT02.5 | visual_user | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | [CT02.5]() |
+| CT02.1 | standard_user | Login realizado, apresenta tela home. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT02](https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0) |
+| CT02.2 | problem_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas a todos os usuários.  | | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT02](https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0) |
+| CT02.3 | performance_glitch_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT02](https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0) || 
+| CT02.4 | error_user  | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT02](https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0) ||
+| CT02.5 | visual_user | Logout realizado, apresenta tela de login. | Login realizado, porém o carrinho está com itens que outro usuário preencheu. O carrinho está comum para todos os usuários, as remoções e adições estão vinculadas em todos os usuários. | O caso de teste foi reproduzido em conjunto, as evidências estão no vídeo: [CT02](https://github.com/user-attachments/assets/6aa61d67-7380-401a-98e5-b87e4f4ffbb0) ||
 
 ##### Consideração geral do cenário: 
   Reprovado, diversas inconsistências encontradas no fluxo de Logout, evidências dos testes no documento: 
