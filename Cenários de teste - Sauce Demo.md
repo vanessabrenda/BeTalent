@@ -1,5 +1,3 @@
-
-https://github.com/user-attachments/assets/0a53e5f6-52ab-4f33-bfbd-1eccf2827649
 # Testes funcionais e não funcionais
 # Ambiente 
 [Sauce Demo](https://www.saucedemo.com/)
@@ -224,31 +222,29 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 **ENTÃO** o sistema redireciona o usuário para a tela correspondente ao botão clicado.           
 
 #### Casos de teste 1: Navegar pelo sistema usando os botões da parte inferior da tela - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
-|------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (Retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (Retorna para a tela anterior). | [CT01.1]() |
-| CT01.2 | problem_user | A tela é redirecionada para a tela correspondente. | Não foi possível completar o fluxo devido ao erro de não poder inserir o Last Name no Checkout. | [CT01.2]() |
-| CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.3]() |
-| CT01.4 | error_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.4]() |
-| CT01.5 | visual_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.5]() |
-
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** 
+|------------|--------------|----------------|-----------|
+| CT01.1 | standard_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (Retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (Retorna para a tela anterior). |
+| CT01.2 | problem_user | A tela é redirecionada para a tela correspondente. | Não foi possível completar o fluxo devido ao erro de não poder inserir o Last Name no Checkout. |
+| CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | 
+| CT01.4 | error_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | 
+| CT01.5 | visual_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | 
+##### Evidências do cenário de navegação entre as páginas: [Cenário09](https://github.com/user-attachments/assets/7828caf0-1acd-4961-bdd8-7dbd0fec1ee3)
 ##### Consideração geral do cenário 
   Aprovado, apenas um botão funciona fora do padrão, verificar possibilidade de ajuste.
 
+### Esquema do Cenário 10: Permitir acionar função 'Reset App State'
+**DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
+**QUANDO** o usuário abre o menu lateral esquerdo,        
+**E** clica na opção 'Reset App State',
+**ENTÃO** o sistema reseta o aplicativo zerando todas as informações inseridas nele.
 
-# Testes de acessibilidade
-## Cenários Opcionais - utilizando o NVDA:
-### Cenário 10: Login com um usuário
-### Cenário 11: Ordenação e filtragem de produtos 
-### Cenário 12: Fluxo completo de compra
-### Cenário 13: Remoção de itens do carrinho
-### Cenário 14: Navegação entre páginas
-### Cenário 15: Logout
+#### Inconsistência na funcionalidade: acontece em todos os usuários
 
-# Testes de responsividade
-## Cenários Opcionais - utilizando o DevTools do Chrome:
-### Cenário 16: Site para celular
-### Cenário 17: Site para tablet
-### Cenário 18: Site para diferentes resoluções de tela
+| **Identificador** | **Inconsistência** | **Correção** | 
+|------------|--------------|----------------|
+|ID01| Ao acionar o botão 'Reset App State', os itens foram removidos do carrinho, mas a tela home continuou apresentando o botão 'Remove'. | Após reset do sistema, os botões de 'Remove' precisam resetar junto ao restante do sistema. |
+
+##### Evidência do cenário resete: [Cenário10](https://github.com/user-attachments/assets/12c32634-4808-4188-8f65-31b165242802)
 
 
