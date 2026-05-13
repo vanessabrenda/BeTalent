@@ -98,7 +98,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
 
 ##### Consideração geral do cenário 
-  Reprovado, diversas inconsistências encontradas no fluxo de remoção de itens.
+  Aprovado com ressalvas, as inconsistências encontradas no fluxo de remoção de itens não impede a remoção por outra tela, mas atrapalha a usabilidade.
 
 ### Esquema do Cenário 04: Logout do sistema
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
