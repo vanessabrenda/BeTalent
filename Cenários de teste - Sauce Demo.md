@@ -190,7 +190,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.3 | performance_glitch_user | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. | [CT01.3]() |
 | CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.4]() |
 | CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.5]() |
-### Esquema do Cenário 07: Interface apresentada para o usuário
+### Esquema do Cenário 08: Interface apresentada para o usuário
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe as telas com interface apropriada para o usuário.           
