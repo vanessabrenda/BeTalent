@@ -143,7 +143,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 ## Cenários Relevantes:
 
-### Esquema do Cenário 05: Permitir ordenação e filtragem de produtos
+### Esquema do Cenário 06: Permitir ordenação e filtragem de produtos
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário acessa o detalhe dos produtos,           
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.      
@@ -177,7 +177,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 ---
 
-### Esquema do Cenário 06: Tempo de carregamento entre as telas
+### Esquema do Cenário 07: Tempo de carregamento entre as telas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe a nova tela em menos de 3 segundos.           
@@ -206,7 +206,7 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 ---
 
-### Esquema do Cenário 08: Permitir navegação entre páginas
+### Esquema do Cenário 09: Permitir navegação entre páginas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas usando os botões de navegação localizados na parte inferior da tela: 'Continue Shopping', 'Checkout', 'Cancel', 'Continue', 'Finish' e 'Back Home',         
 **ENTÃO** o sistema redireciona o usuário para a tela correspondente ao botão clicado.           
