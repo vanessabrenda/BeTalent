@@ -64,9 +64,9 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
 | CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b) |
-| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
 | CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
-| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
 | CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
 
 ##### Consideração geral do cenário 
