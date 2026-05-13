@@ -54,20 +54,40 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 2: Compra de todos os itens - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT02.1 | standard_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. | [CT02.1]() |
-| CT02.2 | problem_user | Compra realizada, mensagem de sucesso exibida. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.2]() |
-| CT02.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT02.3]() |
-| CT02.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.4]() |
-| CT02.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada, porém layout fora dos padrões. | [CT02.5]() |
+| CT02.1 | standard_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada. | [CT02.1](
+
+https://github.com/user-attachments/assets/33ffae67-af13-40a8-92f2-057c997bec52
+
+) |
+| CT02.2 | problem_user | Compra realizada, mensagem de sucesso exibida. | Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.2](
+
+https://github.com/user-attachments/assets/59c3d785-1527-4509-aee5-8679a442c37d
+
+) |
+| CT02.3 | performance_glitch_user | Compra realizada, mensagem de sucesso exibida. | Compra realizada, mensagem de sucesso apresentada. | [CT02.3](
+
+https://github.com/user-attachments/assets/3651429e-f2f1-4f25-aef5-345e251f49fd
+
+) |
+| CT02.4 | error_user | Compra realizada, mensagem de sucesso exibida. |  Os itens: Sauce Labs Bolt T-Shirt, Sauce Labs Fleece Jacket e Sauce Labs Fleece Jacket não foram adicionados ao carrinho, botão 'Add to cart' está sem ação. | [CT02.4](
+
+https://github.com/user-attachments/assets/e065d915-3d88-4c6f-9f0d-78262e19d4d7
+
+) |
+| CT02.5 | visual_user | Compra realizada, mensagem de sucesso exibida. |  Compra realizada, mensagem de sucesso apresentada, porém layout fora dos padrões. | [CT02.5](
+
+https://github.com/user-attachments/assets/8a33cb6c-fa2e-42b2-a233-957100704235
+
+) |
 
 #### Casos de teste 3: Compra de 0 item - Negativo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.1]() |
-| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.2]() |
-| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.3]() |
-| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.4]() |
-| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.5]() |
+| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b) |
+| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
 
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de compras, evidências dos testes no documento: 
