@@ -245,6 +245,6 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 |------------|--------------|----------------|
 |ID01| Ao acionar o botão 'Reset App State', os itens foram removidos do carrinho, mas a tela home continuou apresentando o botão 'Remove'. | Após reset do sistema, os botões de 'Remove' precisam resetar junto ao restante do sistema. |
 
-##### Evidência do cenário resete: [Cenário10](https://github.com/user-attachments/assets/12c32634-4808-4188-8f65-31b165242802)
+##### Evidência do cenário de resete: [Cenário10](https://github.com/user-attachments/assets/12c32634-4808-4188-8f65-31b165242802)
 
 
