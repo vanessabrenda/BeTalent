@@ -63,11 +63,11 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 3: Compra de 0 item - Negativo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b) |
-| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
-| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
-| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
-| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | [A evidência foi realizada no [CT03.1](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.1 | standard_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | Todas as evidências foram realizadas no [CT03](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.2 | problem_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | Todas as evidências foram realizadas no [CT03](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.3 | performance_glitch_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | Todas as evidências foram realizadas no [CT03](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.4 | error_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. |Todas as evidências foram realizadas no [CT03](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
+| CT03.5 | visual_user | Botão de 'Checkout' bloquedo se o carrinho estiver vazio. | Botão de checkout está disponível mesmo com o carrinho vazio, fluxo de compra permitido. | Todas as evidências foram realizadas no [CT03](https://github.com/user-attachments/assets/020f0f79-a93b-4535-b1f4-70f35a4b800b). |
 
 ##### Consideração geral do cenário 
   Reprovado, diversas inconsistências encontradas no fluxo de compras, evidências dos testes no documento: 
@@ -83,11 +83,13 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 #### Casos de teste 1: Remoção de itens do carrinho - Positivo
 | **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**|**Evidência**|
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1]() |
-| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.2]() |
-| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.3]() |
-| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4]() |
-| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5]() |
+| CT01.1 | standard_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.1](https://github.com/user-attachments/assets/728340ad-cddc-4f5f-b5a5-cc7350acd0a8) |
+| CT01.2 | problem_user | Item removido com sucesso. | Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação na tela home, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.2](
+
+https://github.com/user-attachments/assets/ba876995-2b6b-467a-b5ff-42c306ba9697) |
+| CT01.3 | performance_glitch_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. | [CT01.3](https://github.com/user-attachments/assets/b9f745f3-f2ce-459e-9535-d93d86e43b09) |
+| CT01.4 | error_user | Item removido com sucesso. |  Os itens: Sauce Labs Backpack, Sauce Labs Bike Light e Sauce Labs Onesie não foram adicionados ao carrinho, botão 'Remove' está sem ação, mas o 'Remove' da tela do carrinho funcionou, possibilitando a remoção. | [CT01.4](https://github.com/user-attachments/assets/9c6d5f39-329b-442c-a3f6-591f52df762c) |
+| CT01.5 | visual_user | Item removido com sucesso. | Item removido com sucesso em ambas as telas, home e do carrinho. Layout fora dos padrões. | [CT01.5](https://github.com/user-attachments/assets/f3e93005-083e-4d56-9cec-700647711adf) |
 
 ##### Consideração geral do cenário 
   Aprovado com ressalvas, as inconsistências encontradas no fluxo de remoção de itens não impede a remoção por outra tela, mas atrapalha a usabilidade.
