@@ -29,7 +29,7 @@
 | CT02.5 | error_user | teste1434 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.5](https://github.com/user-attachments/assets/068e92e8-264c-45b7-bbfe-18af11e53a14)|
 | CT02.6 | visual_user | teste1435435 | Login não é realizado, mensagem de erro apresentada: Epic sadface: Username and password do not match any user in this service| Login não realizado, mensagem de erro apresentada. | [CT02.6](https://github.com/user-attachments/assets/77a59052-84c6-4394-9b05-98c0bfff90c3)|
 ##### Consideração geral do cenário 
-  Aprovado, o fluxo de login foi realizado, alguns erros foram encontrados em outros fluxos. Evidências dos testes: 
+  Aprovado, o fluxo de login foi realizado, alguns erros foram encontrados em outros fluxos.
   
 ### Esquema do cenário 02: Fluxo de compras
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
