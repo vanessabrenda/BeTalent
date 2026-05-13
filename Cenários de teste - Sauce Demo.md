@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/0a53e5f6-52ab-4f33-bfbd-1eccf2827649
 # Testes funcionais e não funcionais
 # Ambiente 
 [Sauce Demo](https://www.saucedemo.com/)
@@ -196,14 +198,22 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 
 | **Identificador** | **Inconsistência** | **Correção** | 
 |------------|--------------|----------------|
-|ID01| Na tela de login, a mensagem de erro apresentada quando digita uma senha incorreta está sendo cortada. | Redimensionar a mensagem para encaixar no campo designado. |
+|ID01| Acontece no Chrome e Firefox: Na tela de login, a mensagem de erro apresentada quando digita uma senha incorreta está sendo cortada. | Redimensionar a mensagem para encaixar no campo designado. |
 |ID02| O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). | Ajustar código para que o frontend apresente a mensagem correta sobre a descrição do item e não resquício de código. |
 |ID03| O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. | Ajustar código para que o frontend apresente a mensagem correta do nome do item e não resquício de código. |
 |ID04| O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. | Ajustava tipo de clique do carrinho, apresentando o ícone padrão de links. |
 |ID05| Na última tela de checkout, onde finaliza a compra, quando há 5 itens no carrinho, o Preço exibido no Checkout aparece mais caracteres na casa dos centavos: Item total: $113.94999999999999. | Ajustar o sistema para calcular o preço corretamente quando há 5 itens no carrinho. |
-##### Evidências das inconsistências de interface em comum a todos os usuários: [Cenário08]()
+##### Evidências das inconsistências de interface em comum a todos os usuários: [Cenário08](https://github.com/user-attachments/assets/2de74b1b-a55c-4459-bef4-fbef1792726b)
 
-
+#### Inconsistências de interface: Itens de usuários específicos 
+| **Identificador** | **Usuário** | **Inconsistência** | **Correção** |
+|------------|-------------|------------|----------------| 
+|ID06| visual_user | O primeiro item da tela home apresenta uma imagem incorreta. | Ajustar exibição do item para o usuário. | 
+|ID07| visual_user | Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos outros usuários. | Ajustar layout para o usuário.|
+|ID08| Visual_user |O itens apresentam valores incorretos na tela home. | Ajustar a exibição dos preços para o usuário. |
+|ID09| problem_user | Todos os itens da tela home aparecem com a imagem incorreta, diferente dos outros usuários. | Ajustar a exibição dos itens para o usuário. |
+##### Evidências das inconsistências do usuário visual_user: [visual_user](https://github.com/user-attachments/assets/7901c4b5-f8fc-416a-a3d1-8239c5a4ee1e)
+##### Evidências das inconsistências do usuário problem_user: [problem_user](https://github.com/user-attachments/assets/2b9ad7f1-7145-45ea-afdb-516499f838d1)
 
 ##### Consideração geral do cenário         
   O Layout não é impeditivo para entrega, porém está apresentando diversas falhas, por isso é de alta prioridade para ajuste. 
