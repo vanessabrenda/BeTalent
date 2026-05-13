@@ -142,73 +142,83 @@ Your order has been dispatched, and will arrive just as fast as the pony can get
 | CT01.5 | visual_user | Detalhe do produto apresentado corretamente. | Detalhe do produto apresentado corretamente, mas a imagem da tela home está incorreta para o primeiro item da tela (mesmo que a ordenação mude o primeiro item, a imagem está fixa, sempre aparece a mesma, a imagem do detalhe está correta.|
 
 ## Cenários Relevantes:
+
 ### Esquema do Cenário 05: Permitir ordenação e filtragem de produtos
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário acessa o detalhe dos produtos,           
 **ENTÃO** o sistema exibe o detalhe do produto escolhido.      
+
 #### Casos de teste 1: ordenar os produtos por ordem alfabética - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
-| CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. |
-| CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
-| CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
-| CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. |
+| CT01.1 | standard_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.1]() |
+| CT01.2 | problem_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ordenação Z-A não está funcionando. | [CT01.2]() |
+| CT01.3 | performance_glitch_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.3]() |
+| CT01.4 | error_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Não foi possível ordenar de Z-A, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT01.4]() |
+| CT01.5 | visual_user | Produtos ordenados em ordem alfabética de A-Z ou Z-A | Ambas as ordenações por ordem alfabética efetuadas com sucesso. | [CT01.5]() |
+
 #### Casos de teste 2: ordenar os produtos por preço - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
-| CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. |
-| CT02.3 | performance_glitch_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. |
-| CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. |
-| CT02.5 | visual_user  | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. |
+| CT02.1 | standard_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso. | [CT02.1]() |
+| CT02.2 | problem_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, o sistema não teve nenhuma ação. | [CT02.2]() |
+| CT02.3 | performance_glitch_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Ambas as ordenações por preço efetuadas com sucesso.| [CT02.3]() |
+| CT02.4 | error_user | Produtos ordenados por preço, maior para menor ou menor para maior. | Nenhuma ordenação por preço funcionou, mensagem de erro exibida: Sorting is broken! This error has been reported to Backtrace. | [CT02.4]() |
+| CT02.5 | visual_user | Produtos ordenados por preço, maior para menor ou menor para maior. | As ordenações alteraram a ordem dos produtos, mas não apresentou corretamente os itens, além disso, o preço exibido na home está incorreto. | [CT02.5]() |
+
 #### Casos de teste 3: filtrar produtos - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
-| CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
-| CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
-| CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
-| CT03.5 | visual_user  | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. |
+| CT03.1 | standard_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.1]() |
+| CT03.2 | problem_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.2]() |
+| CT03.3 | performance_glitch_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.3]() |
+| CT03.4 | error_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.4]() |
+| CT03.5 | visual_user | Possibilidade de filtrar os produtos | Filtragem de produto indisponível. | [CT03.5]() |
+
+---
+
 ### Esquema do Cenário 06: Tempo de carregamento entre as telas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe a nova tela em menos de 3 segundos.           
+
 #### Casos de teste 1: Navegar pelo sistema - Positivo 
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
-| CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
-| CT01.3 | performance_glitch_user  | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. |
-| CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
-| CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. |
+| CT01.1 | standard_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.1]() |
+| CT01.2 | problem_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente.| [CT01.2]() |
+| CT01.3 | performance_glitch_user | As telas do sistema são carregadas em menos de 3 segundos. | A tela home do sistema leva entre 5 a 7 segundos para ser carregada, qualquer ação na tela home leva esse tempo de carregamento. | [CT01.3]() |
+| CT01.4 | error_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.4]() |
+| CT01.5 | visual_user | As telas do sistema são carregadas em menos de 3 segundos. | As telas do sistema foram carregadas instanteneamente. | [CT01.5]() |
 ### Esquema do Cenário 07: Interface apresentada para o usuário
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
 **QUANDO** o usuário navega entre as telas,         
 **ENTÃO** o sistema exibe as telas com interface apropriada para o usuário.           
+
 #### Casos de teste 1: Interface apresentada para o usuário - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. |
-| CT01.2 | problem_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema.|
-| CT01.3 | performance_glitch_user  | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço: Item total: $113.94999999999999|
-| CT01.4 | error_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999|
-| CT01.5 | visual_user |A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999 6. O primeiro item da tela home apresenta uma imagem incorreta. 7. Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos ostros usuários. |
+| CT01.1 | standard_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. | [CT01.1]() |
+| CT01.2 | problem_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema.| [CT01.2]() |
+| CT01.3 | performance_glitch_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço: Item total: $113.94999999999999| [CT01.3]() |
+| CT01.4 | error_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999| [CT01.4]() |
+| CT01.5 | visual_user | A interface apresentada nas telas não deve conter resquícios de código e as informações devem ser claras, seguindo o mesmo padrão de layout para todos os usuários. | 1. Na tela de login, a mensagem de erro quando digita uma senha incorreta está sendo cortada. 2. O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). 3. O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. 4. O ícone do carrinho deveria ser apresentado como clicável pelo cursor do mouse, conforme padrão do sistema. 5. O Preço exibido no Checkout aparece fora do padrão de preço, exibindo mais caracteres na casa dos centavos: Item total: $113.94999999999999 6. O primeiro item da tela home apresenta uma imagem incorreta. 7. Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos outros usuários. | [CT01.5]() |
+
+---
+
 ### Esquema do Cenário 08: Permitir navegação entre páginas
 **DADO QUE** o usuário realizou o login com um dos usuários da coluna 'Usuário' na plataforma Sauce Demo,    
-**QUANDO** o usuário navega entre as telas usando os botões de navegação localizados na parte inferir da tela: 'Continue Shopping', 'Checkout', 'Cancel', 'Continue', 'Finish' e 'Back Home',         
+**QUANDO** o usuário navega entre as telas usando os botões de navegação localizados na parte inferior da tela: 'Continue Shopping', 'Checkout', 'Cancel', 'Continue', 'Finish' e 'Back Home',         
 **ENTÃO** o sistema redireciona o usuário para a tela correspondente ao botão clicado.           
+
 #### Casos de teste 1: Navegar pelo sistema usando os botões da parte inferior da tela - Positivo
-| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido**| **Evidência**|
+| **Caso de teste** | **Usuário** | **Resultado esperado** | **Resultado obtido** | **Evidência** |
 |------------|--------------|----------------|-----------|-----------|
-| CT01.1 | standard_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (Retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (Retorna para a tela anterior).|
-| CT01.2 | problem_user | A tela é redirecionada para a tela correspondente. | Não foi possível completar o fluxo devido ao erro de não poder inserir o Last Name no Checkout. |
-| CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior).|
-| CT01.4 | error_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior).|
-| CT01.5 | visual_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior).|
-
-
-
+| CT01.1 | standard_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (Retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (Retorna para a tela anterior). | [CT01.1]() |
+| CT01.2 | problem_user | A tela é redirecionada para a tela correspondente. | Não foi possível completar o fluxo devido ao erro de não poder inserir o Last Name no Checkout. | [CT01.2]() |
+| CT01.3 | performance_glitch_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.3]() |
+| CT01.4 | error_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.4]() |
+| CT01.5 | visual_user | A tela é redirecionada para a tela correspondente. | Os botões redirecionaram corretamente, mas foi possível notar que o botão 'Cancel' da tela 'Checkout: Overview' teve um comportamento diferente (retorna para a tela home) do botão 'Cancel' da tela 'Checkout: Your Information' (retorna para a tela anterior). | [CT01.5]() |
 
 # Testes de acessibilidade
 ## Cenários Opcionais - utilizando o NVDA:
