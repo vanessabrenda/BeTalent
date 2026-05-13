@@ -96,29 +96,35 @@ https://github.com/user-attachments/assets/5362d9d9-055c-4fcb-9849-f3c6af95d952
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
 |BA05| Alterar o tipo de ordenação indisponível. | Ao modificar o tipo de ordenação o sistema apresenta mensagem de erro. | Ordenação e filtragem | error_user | 1. Logar com o usuário error_user. 2. Seleciona cada uma das possibilidades de ordenação. 3. Verificar que apresenta uma mensagem de erro. | Ajustar a ordenação para o usuário | Pendente. |
-
 #### Evidências do erro - Ordem alfabética:
 https://github.com/user-attachments/assets/c27617a9-345e-4836-ad52-129b26204b52
 #### Evidências do erro - Preço:
 https://github.com/user-attachments/assets/e5ee81df-30af-4841-9da3-1d4d99e0deaa
+
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
 |BA06| Botões fora de posição para visual_user. | Os botões: ícone do carrinho, o 'Add to cart' do último item da home e 'Checkout' na tela do carrinho estão apresentando em locais incorretos do sistema. fora do padrão dos outros usuários. | Fluxo de compra | visual_user | 1. Logar com o usuário visual_user. 2. Prosseguir com os fluxos de com0pra. | Ajustar layout para o usuário. | Pendente. |
-
 #### Evidências do erro:
 https://github.com/user-attachments/assets/7901c4b5-f8fc-416a-a3d1-8239c5a4ee1e
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
-|BA07| Corte na tela mensagem de erro quando digita uma senha incorreta. | Acontece no Chrome e Firefox: Na tela de login, a mensagem de erro apresentada quando digita uma senha incorreta está sendo cortada. | Fluxo de Login | Todos | 1. Tentar Logar com qualquer usuário. 2. Inserir a senha incorreta. 3. Verificar mensagem de erro. | Redimensionar mensagem. | Pendente. |
+|BA07| Fragmento de código apresentado em item. |O item: Sauce Labs Backpack. possui o seguinte fragmento de código na descrição: carry.allTheThings(). | Fluxo de compra | Todos | 1. Logar com qualquer usuário. 2. Clicar no item Sauce Labs Backpack na home. 3. Verificar descrição | Ajustar exibição do item. | Pendente. |
 
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BA08| Item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. |O item Test.allTheThings() T-Shirt (Red) possui fragmento de código em seu nome. | Fluxo de compra | Todos | 1. Logar com qualquer usuário. 2. Verificar item Test.allTheThings() T-Shirt (Red) na home e no detalhe. | Ajustar exibição do item. | Pendente. |
+
+#### Evidências dos erros BA07 e BA08:
+https://github.com/user-attachments/assets/2de74b1b-a55c-4459-bef4-fbef1792726b
+  
 ## Bugs Moderados
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
 |--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
-|BM01| Lentidão no usuário performance_glitch_user | Ao acessar a tela home do usuário performance_glitch_user o sistema trava por alguns segundos até apresentar a tela. | Usabilidade | performance_glitch_user | 1. Logar com o usuário performance_glitch_user. 2. realizar ações na tela home. 3. Verificar o tempo de resposta.. | Verificar o que está causando a lentidão para o usuário e ajustar. | Pendente. |
+|BM01|  O botão 'Reset App State' não reseta o botão 'Remove' | Ao acionar o botão 'Reset App State', os itens foram removidos do carrinho, mas a tela home continuou apresentando o botão 'Remove'. | Resete do sistema | Todos | 1. Logar com qualquer usuário. 2. Adicionar itens ao carrinho. 3. Acionar 'Reset App State'. | Ajustar funcionalidade. | Pendente. |
 
-#### Evidências do erro - Ordem alfabética:
+#### Evidências do erro:
 https://github.com/user-attachments/assets/e2b4f71c-c6f3-4267-bb77-197e3ae343a9
 
 |ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
@@ -131,4 +137,13 @@ https://github.com/user-attachments/assets/e2b4f71c-c6f3-4267-bb77-197e3ae343a9
 
 #### Evidências do erro item BM02 e BM03:
 https://github.com/user-attachments/assets/2de74b1b-a55c-4459-bef4-fbef1792726b
+
+## Bugs Baixos
+
+|ID| Nome do defeito | Descrição | Função afetada | Usuário afetado| Passos para reprodução | Como deveria funcionar| Estado|        
+|--|-----------------|-----------|------------|-----------|------------------------|----------------------|-------|           
+|BB01| Lentidão no usuário performance_glitch_user | Ao acessar a tela home do usuário performance_glitch_user o sistema trava por alguns segundos até apresentar a tela. | Usabilidade | performance_glitch_user | 1. Logar com o usuário performance_glitch_user. 2. Realizar ações na tela home. 3. Verificar o tempo de resposta. | Verificar o que está causando a lentidão para o usuário e ajustar. | Pendente. |
+
+#### Evidências do erro:
+https://github.com/user-attachments/assets/e2b4f71c-c6f3-4267-bb77-197e3ae343a9
 
