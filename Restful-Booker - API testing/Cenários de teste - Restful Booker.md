@@ -46,19 +46,11 @@ O status 201, created sinaliza o sucesso na operação de exclusão.
 
 ### Validações de Campos Obrigatórios
 
-- Cada campo obrigatório omitido gera erro.
-- **Esperado:** `400 Bad Request`.
-- **Obtido:** alguns casos retornam `500 Internal Server Error`.
-
-### Comparativo Esperado vs Obtido
-
-| Campo obrigatório   | Esperado           | Obtido                  |
+| Campo obrigatório retirado da requisição  | Esperado           | Obtido                 | 
 |---------------------|-------------------|-------------------------|
 | **firstname**       | 400 Bad Request   | 500 Internal Server Error |
 | **lastname**        | 400 Bad Request   | 500 Internal Server Error |
-| **totalprice**      | 400 Bad Request   | 400 Bad Request         |
-| **bookingdates**    | 400 Bad Request   | 400 Bad Request         |
-| **depositpaid**     | 400 Bad Request   | 400 Bad Request         |
-| **additionalneeds** | 400 Bad Request   | 400 Bad Request         
+| **totalprice**      | 400 Bad Request   | 500 Internal Server Error |
+| **bookingdates**    | 400 Bad Request   | 500 Internal Server Error |
+| **depositpaid**     | 400 Bad Request   | 500 Internal Server Error |
 
-Para 
