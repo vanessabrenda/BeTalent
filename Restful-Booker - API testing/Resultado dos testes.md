@@ -1,8 +1,18 @@
 # Resultado dos testes realizados
 
-## Execução completa da collection
+## Resultado da execução completa da collection
+
+| **Request** | **Resultado esperado** | **Resultado obtido**| 
+|------------|-------------|---------------|
+|Auth - Login | Status code 200 |  Status code 200 | 
+|Booking - Read | Status code 200 |  Status code 200 | 
+|Booking - Update | Status code 200 |  Status code 200 | 
+|Booking - delete | Status code 201 |  Status code 201 | 
+|Booking - create - sem firstname| Status code 400 |  Status code 500 | 
+|Booking - create - sem lastname | Status code 400 |  Status code 500 | 
+|Booking - create - sem totalprice| Status code 400 |  Status code 500 | 
+|Booking - create - sem bookingdates| Status code 400 |  Status code 500 | 
+|Booking - create - sem depositpaid| Status code 400 |  Status code 500 |
+|Booking - create - sem additionalneeds| Status code 200 |  Status code 200 | 
 
 
-https://github.com/user-attachments/assets/c1493003-d6c8-4711-b4aa-37ddbd9c3109
-
-A execução retornou 4 erros: 
