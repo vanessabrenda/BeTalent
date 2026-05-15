@@ -9,17 +9,28 @@
 ## Cenários Restful Booker
 
 ### Autenticação
-  1. Envia usuário e senha padrão (`admin` / `password123`);
-  2. Retorna token para ser usado nos requests protegidos.
+  1. Envia os seguintes dados:         
+     { "username": "{{username}}", "password": "{{password}}" }     
+  2. Retorna token para ser usado nos requests protegidos.    
 
-Evidências da autenticação:
+Evidências da autenticação:      
 
 <img width="1266" height="794" alt="image" src="https://github.com/user-attachments/assets/02e99070-57bf-4d68-bec4-acdac53c6627" />
 
 
 ### CRUD de Reservas
 #### Create - cria reserva e retorna `bookingId`
-Evidência da criação:    
+
+  Os seguintes dados são enviados:         
+  { "firstname": "Vanessa",        
+    "lastname": "Aires",            
+    "totalprice": 20,        
+    "depositpaid": true,       
+    "bookingdates":       
+      { "checkin": "2026-05-15", "checkout": "2026-05-20" },     
+    "additionalneeds": "duas camas" }      
+
+E a reserva é criada.            
 
 <img width="1285" height="798" alt="image" src="https://github.com/user-attachments/assets/341407ff-dc71-4c2e-98a7-8f82d4f691fb" />
 
@@ -31,7 +42,14 @@ Evidência da consulta:
 
 #### Update - atualiza dados da reserva usando token.
 
-Evidência da atualização:
+Envia os dados para edição:        
+{ "firstname": "Vanessa",      
+  "lastname": "Souza",          
+  "totalprice": 200,        
+  "depositpaid": false,      
+  "bookingdates": { "checkin": "2026-06-01", "checkout": "2026-06-05" },      
+  "additionalneeds": "uma cama" }         
+    
 
 <img width="1278" height="802" alt="image" src="https://github.com/user-attachments/assets/71da272f-2ef4-4600-bde5-4b3701661077" />
 
@@ -59,5 +77,6 @@ Obs.: Foi verificado que o campo 'Additionalneeds' não é obrigatório.
 Evidência da validação dos campos obrigatórios:
 
 
-https://github.com/user-attachments/assets/43b7f0d3-1798-4379-a15f-bb5bada874f4
+https://github.com/user-attachments/assets/32d0aaaa-899a-483a-8ff3-20ff42829a81
+
 
