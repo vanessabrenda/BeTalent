@@ -1,0 +1,64 @@
+$kind: http-request
+name: Booking - Update
+url: "{{baseUrl}}/booking/{{bookingId}}"
+method: PUT
+headers:
+  Content-Type: application/json
+  Cookie: token={{token}}
+  Accept: application/json
+  Authorization: basic
+body:
+  type: text
+  content: '{ "firstname": "Vanessa", "lastname": "Souza", "totalprice": 200, "depositpaid": false, "bookingdates": { "checkin": "2026-06-01", "checkout": "2026-06-05" }, "additionalneeds": "Dinner" }'
+scripts:
+  - type: beforeRequest
+    code: "if (!pm.environment.get(\"token\")) {\r
+
+      \    throw new Error(\"Token não definido. Faça login primeiro.\");\r
+
+      }\r
+
+      if (!pm.environment.get(\"bookingId\")) {\r
+
+      \    throw new Error(\"bookingId não definido. Crie uma reserva primeiro.\");\r
+
+      }\r
+
+      \r
+
+      // Adiciona o header Cookie com o token\r
+
+      pm.request.headers.add({\r
+
+      \    key: \"Cookie\",\r
+
+      \    value: \"token=\" + pm.environment.get(\"token\")\r
+
+      });"
+    language: text/javascript
+  - type: afterResponse
+    code: "pm.test(\"Status code é 200\", function () {\r
+
+      \    pm.expect(pm.response.code).to.eql(200);\r
+
+      });\r
+
+      \r
+
+      pm.test(\"Dados foram atualizados\", function () {\r
+
+      \    if (pm.response.headers.get(\"Content-Type\").includes(\"application/json\")) {\r
+
+      \        var jsonData = pm.response.json();\r
+
+      \        pm.expect(jsonData.firstname).to.eql(\"Vanessa\");\r
+
+      \    } else {\r
+
+      \        pm.expect(pm.response.text()).to.include(\"Vanessa\");\r
+
+      \    }\r
+
+      });"
+    language: text/javascript
+order: 5000

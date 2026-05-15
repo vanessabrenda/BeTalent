@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{baseUrl}}/booking"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: '{ ""lastname": "Silva", "totalprice": 150, "depositpaid": true, "bookingdates": { "checkin": "2026-05-15", "checkout": "2026-05-20" }, "additionalneeds": "Breakfast" }'
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code é 400", function () {
+          pm.response.to.have.status(400);
+      });
+
+      pm.test("Resposta é texto 'Bad Request'", function () {
+          pm.expect(pm.response.text()).to.include("Bad Request");
+      });
+    language: text/javascript
+  - type: beforeRequest
+    code: "let randomLastName = \"Silva_\" + Math.floor(Math.random() * 1000);\r
+
+      pm.environment.set(\"lastname\", randomLastName);"
+    language: text/javascript
+order: 3164914412221821

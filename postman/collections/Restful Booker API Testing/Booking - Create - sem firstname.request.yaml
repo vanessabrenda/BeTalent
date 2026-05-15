@@ -1,0 +1,21 @@
+$kind: http-request
+name: Booking - Create - sem firstname
+url: "{{baseUrl}}/booking"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: '{ "lastname": "Silva", "totalprice": 150, "depositpaid": true, "bookingdates": { "checkin": "2026-05-15", "checkout": "2026-05-20" }, "additionalneeds": "Breakfast" }'
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code é 400", function () {
+          pm.response.to.have.status(400);
+      });
+
+      pm.test("Resposta é texto 'Bad Request'", function () {
+          pm.expect(pm.response.text()).to.include("Bad Request");
+      });
+    language: text/javascript
+order: 2217550333086693
