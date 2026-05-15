@@ -54,3 +54,10 @@ O status 201, created sinaliza o sucesso na operação de exclusão.
 | **bookingdates**    | 400 Bad Request   | 500 Internal Server Error |
 | **depositpaid**     | 400 Bad Request   | 500 Internal Server Error |
 
+Obs.: Foi verificado que o campo 'Additionalneeds' não é obrigatório.
+
+Evidência da validação dos campos obrigatórios:
+
+
+https://github.com/user-attachments/assets/43b7f0d3-1798-4379-a15f-bb5bada874f4
+
