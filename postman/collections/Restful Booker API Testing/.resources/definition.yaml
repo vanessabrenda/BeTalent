@@ -1,9 +1,0 @@
-$kind: collection
-name: Restful Booker API Testing
-description: Collection para testes de autenticação e CRUD de reservas
-variables:
-  baseUrl: https://restful-booker.herokuapp.com
-  username: admin
-  password: password123
-  token: ""
-  bookingId: ""
