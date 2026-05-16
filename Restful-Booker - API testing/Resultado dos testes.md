@@ -1,44 +1,210 @@
-# Resultado dos testes realizados
+# Resultado dos testes
 
 ## Resultados obtidos com as requisições
 
 |**ID¨**| **Request** | **Resultado esperado** | **Resultado obtido**| **Divergência**|
 |------------|-------------|---------------|-----|-------|
-|REQ01|Auth - Login | Status code 200 |  Status code 200 | Não |
-|REQ02|Booking - Read | Status code 200 |  Status code 200 | Não |
-|REQ03|Booking - Update | Status code 200 |  Status code 200 | Não |
-|REQ04|Booking - delete | Status code 201 |  Status code 201 | Não |
-|REQ05|Booking - create - sem firstname| Status code 400 |  Status code 500 | Sim |
-|REQ06|Booking - create - sem lastname | Status code 400 |  Status code 500 | Sim |
-|REQ07|Booking - create - sem totalprice| Status code 400 |  Status code 500 | Sim |
-|REQ08|Booking - create - sem bookingdates| Status code 400 |  Status code 500 | Sim | 
-|REQ09|Booking - create - sem depositpaid| Status code 400 |  Status code 500 | Sim |
-|REQ10|Booking - create - sem additionalneeds| Status code 200 |  Status code 200 | Não |
+| REQ01 | Auth - Login                             | Status code 200    | Status code 200  | Não |
+| REQ02 | Booking - create                         | Status code 200    | Status code 200  | Não |
+| REQ03 | Booking - Read                           | Status code 200    | Status code 200  | Não |
+| REQ04 | Booking - read firstname                 | Status code 200    | Status code 200  | Não |
+| REQ05 | Booking - read lastname                  | Status code 200    | Status code 200  | Não |
+| REQ06 | Booking - read checkin                   | Status code 200    | Status code 200  | Sim, voltaram IDs sem o checkin escolhido |
+| REQ07 | Booking - read checkout                  | Status code 200    | Status code 200  | Sim, voltaram IDs sem o checkout escolhido |
+| REQ08 | Booking - read firstname & lastname      | Status code 200    | Status code 200  | Não |
+| REQ09 | Booking - Update - parcial               | Status code 200    | Status code 200  | Não |
+| REQ10 | Booking - update                         | Status code 200    | Status code 200  | Não |
+| REQ11 | Booking - delete                         | Status code 201    | Status code 201  | Não |
+| REQ12 | Booking - create - sem firstname         | Status code 400    | Status code 500  | Sim, status code diferente do padrão|
+| REQ13 | Booking - create - sem lastname          | Status code 400    | Status code 500  | Sim, status code diferente do padrão|
+| REQ14 | Booking - create - sem totalprice        | Status code 400    | Status code 500  | Sim, status code diferente do padrão|
+| REQ15 | Booking - create - sem bookingdates      | Status code 400    | Status code 500  | Sim, status code diferente do padrão|
+| REQ16 | Booking - create - sem depositpaid       | Status code 400    | Status code 500  | Sim, status code diferente do padrão|
+| REQ17 | Booking - create - sem additionalneeds   | Status code 200    | Status code 200  | Não |
 
 ## Evidências dos resultados
+### As variáveis foram previamente configuradas no ambiente para facilitar a criação e execução de scripts que validam os resultados, além disso, foi feita a automação dos testes.
+
+<img width="1087" height="901" alt="image" src="https://github.com/user-attachments/assets/d0a6bae0-29b8-4ea8-93cc-2822b9f295eb" />
+
 
 ### REQ01
 
-<img width="1913" height="1014" alt="image" src="https://github.com/user-attachments/assets/abf6f9ca-b467-455c-a71f-496c81c67508" />
+O envio do username e password é realizado e o resultado da requisição é um token válido, a API funcionou corretamente, retornando o resultado 200:
+<img width="1595" height="993" alt="image" src="https://github.com/user-attachments/assets/00195e35-85df-4069-a79a-996719637bc2" />
+
+O script inserido valida o retorno da API, o retorno foi bem sucedido:
+<img width="1900" height="1021" alt="image" src="https://github.com/user-attachments/assets/77e65e37-48db-47d8-88f7-85cd85c8c7df" />
+
 
 ### REQ02
 
-<img width="1911" height="1077" alt="image" src="https://github.com/user-attachments/assets/ad713326-db48-4a30-900f-6a54e63bdb8a" />
+A requisição envia os dados e cria a reserva no sistema:
+<img width="1566" height="996" alt="image" src="https://github.com/user-attachments/assets/8f9677a3-4292-4812-a593-2d99439576f4" />
+o script está validando o retorno do post:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/6830e09b-cc38-4404-9fcc-91a7b061e0d5" />
 
 ### REQ03
 
-<img width="1889" height="1079" alt="image" src="https://github.com/user-attachments/assets/32de4c4a-0b4e-4efb-bed6-6ccb60157d6a" />
+A requisição envia o ID da reserva, nesse caso, o ID enviado é resultado do create anterior, configurado nas variáveis do ambiente:
+
+<img width="1254" height="41" alt="image" src="https://github.com/user-attachments/assets/6e810366-a8bd-4765-8215-5f35c6d27d3e" />
+O retorno é o json com as informações da reserva:
+<img width="1586" height="986" alt="image" src="https://github.com/user-attachments/assets/dcfe9107-5f24-4549-97b6-5fc13002ca24" />
+O script valida o resultado da requisição:
+<img width="1911" height="1023" alt="image" src="https://github.com/user-attachments/assets/20ffa39e-551d-40ca-85b7-299118d8e287" />
 
 ### REQ04
 
-<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/b3b36fd0-85ae-44a0-8d99-f6484bd08818" />
+A requisição envia o ID e o firstname para filtrar o resultado das reservas:
+
+<img width="1896" height="1013" alt="image" src="https://github.com/user-attachments/assets/408d80db-c5ac-4dc8-8fb9-947aae56cd63" />
+O script valida o retorno da API:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/1c5d816d-d5ee-4005-9573-44c26785ffa6" />
 
 ### REQ05
+A requisição envia o ID e o lastname para filtrar o resultado das reservas:
+<img width="1905" height="1079" alt="image" src="https://github.com/user-attachments/assets/23058728-e4d5-4415-993d-9a0d8e29ba53" />
 
-<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/68254599-b245-4d19-8a9e-4bbc3044eb2e" />
+O script valida o retorno da API:
+
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/f8699409-690b-4d70-a3b0-ccdeeb71f44e" />
 
 ### REQ06
+A requisição envia o ID e o checkin para filtrar o resultado das reservas:
+
+<img width="1909" height="1079" alt="image" src="https://github.com/user-attachments/assets/109ad1be-eb60-46cc-a1a4-f47891dd0789" />
+
+O script valida o retorno da API:
+
+<img width="1896" height="1077" alt="image" src="https://github.com/user-attachments/assets/44b94361-2cfd-424c-89d1-2d0885aa380f" />
+Apesar da requisição ter voltado uma resposta válida, a conferência da ID retornada não estava correta, a API exibe IDs de reservas que não possuem a data de checkin e não retornou o número ID da reserva que de fato possui o checkin com a data em questão, segue as evidências:
+Configuração atual do checkin:
+
+<img width="720" height="34" alt="image" src="https://github.com/user-attachments/assets/2141fb6c-9476-4158-bba8-ad4df1afba81" />
+Retorno da API:
+
+<img width="1881" height="1079" alt="image" src="https://github.com/user-attachments/assets/5b153a94-cdc4-41ef-83af-a9725a60738e" />
+
+Consulta do ID retornado pela API:
+
+<img width="1915" height="1016" alt="image" src="https://github.com/user-attachments/assets/20b2905f-aac4-4818-9e41-c738e4bb53a4" />
+#### Portanto a REQ06 gerou um erro.
+
 ### REQ07
+A requisição envia o ID e o checkout para filtrar o resultado das reservas:
+<img width="1918" height="1038" alt="image" src="https://github.com/user-attachments/assets/8b196ce7-43db-4ebf-a48f-739f120d2c1e" />
+
+O script valida o retorno da API:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/128c4d5d-3cba-4b96-a70f-e7c992908e1c" />
+
+Apesar da requisição ter voltado uma resposta válida, a conferência da ID retornada não estava correta, a API exibe IDs de reservas que não possuem a data de checkout e não retornou o número ID da reserva que de fato possui o checkout com a data em questão, segue as evidências:
+Configuração atual do checkout:
+<img width="824" height="34" alt="image" src="https://github.com/user-attachments/assets/aa6b3d53-652b-45c0-9bc0-8fbb7d83893a" />
+
+Retorno da API:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/7fdeafa9-405b-468f-93b9-e27647cc762b" />
+
+
+Consulta do ID retornado pela API:
+<img width="1905" height="1079" alt="image" src="https://github.com/user-attachments/assets/f7f53a6d-ca7e-4af7-b694-cc248445a825" />
+
+
+#### Portanto a REQ07 gerou um erro.
+
 ### REQ08
+A requisição envia o ID, firstname e o lastname para filtrar o resultado das reservas:
+<img width="1913" height="1020" alt="image" src="https://github.com/user-attachments/assets/39526112-224a-41ec-9296-ed4bfd06cbb2" />
+
+O script valida o retorno da API:
+<img width="1894" height="1018" alt="image" src="https://github.com/user-attachments/assets/33e60a5e-46d5-41a9-a753-daeb8b34a091" />
+
 ### REQ09
+ Envia apenas alguns campos para atualizar uma reserva, retornando a reserva atualizada:
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/13e5fed7-fdab-4007-a904-3b0a2cbc09aa" />
+O script valida o retorno da API:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/14407180-95d2-4957-9f87-68f8c4b33ea1" />
+
+Observação da API, o site deixa claro que o token é opcional:
+<img width="1374" height="992" alt="image" src="https://github.com/user-attachments/assets/fd90f109-d5d4-4ef2-b718-4b9655235bdd" />
+
+Porém sem token não é possível realizar o update:
+<img width="1903" height="1020" alt="image" src="https://github.com/user-attachments/assets/5380d8f0-98f2-4ea2-8e71-30f88765b7f6" />
+
+#### A inconsistência da REQ09 gerada deve ser analisada.
+
 ### REQ10
+
+Envia todos campos para atualizar uma reserva, retornando a reserva atualizada:
+<img width="1910" height="1079" alt="image" src="https://github.com/user-attachments/assets/2e8baed8-a140-4c65-a418-98d54d2e43a2" />
+
+O script valida o retorno da API:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/fab901a8-41b7-4479-9f63-112e76d5a02b" />
+
+Observação da API, o site deixa claro que o token é opcional:
+<img width="1455" height="1023" alt="image" src="https://github.com/user-attachments/assets/44d5fd5a-a423-4c27-8129-698b9518b587" />
+
+
+Porém sem token não é possível realizar o update:
+<img width="1915" height="1021" alt="image" src="https://github.com/user-attachments/assets/395f8eee-5233-4de1-a721-2e0d31c2f5c0" />
+
+#### A inconsistência da REQ10 gerada deve ser analisada.
+
+### REQ11
+
+A requisição envia a ID da reserva a ser deletada e é feita a exclusão:
+<img width="1852" height="994" alt="image" src="https://github.com/user-attachments/assets/6ce61e5f-3cf2-4208-8b4f-c280be7d695b" />
+
+o script está validando o retorno do post:
+<img width="1907" height="1016" alt="image" src="https://github.com/user-attachments/assets/bbe3ece6-2014-4b35-af2c-6d49b15e806a" />
+
+### REQ12
+
+A requisição envia os dados de post sem um campo obrigatório:
+<img width="1870" height="1018" alt="image" src="https://github.com/user-attachments/assets/0430eb92-c755-4dc9-ae72-784e79b14096" />
+o script está validando o retorno do post:
+<img width="1911" height="1077" alt="image" src="https://github.com/user-attachments/assets/b6689a05-f912-4200-ac1c-ba27350ee8bf" />
+#### Ocorre um erro na verificação, a API retorna o status 500, mas nesse tipo de verificação de campo obrigatório deveria retornar 400.
+### REQ13
+A requisição envia os dados de post sem um campo obrigatório:
+<img width="1887" height="1079" alt="image" src="https://github.com/user-attachments/assets/a206896c-6c52-4bb0-a43a-6f4bd7fa9f66" />
+
+o script está validando o retorno do post:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/3f73fc7a-ff2d-4fb9-9853-0dab6fd8fc8c" />
+
+#### Ocorre um erro na verificação, a API retorna o status 500, mas nesse tipo de verificação de campo obrigatório deveria retornar 400.
+### REQ14
+A requisição envia os dados de post sem um campo obrigatório:
+
+<img width="1905" height="1075" alt="image" src="https://github.com/user-attachments/assets/54ef9a7a-9a02-472c-9ac6-8430e164245b" />
+
+o script está validando o retorno do post:
+
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/0e15dcae-e8db-4334-8fa8-96f6cd2b3b72" />
+
+#### Ocorre um erro na verificação, a API retorna o status 500, mas nesse tipo de verificação de campo obrigatório deveria retornar 400.
+### REQ15
+A requisição envia os dados de post sem um campo obrigatório:
+
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/ada0568c-0949-4033-966e-df2303d57ea1" />
+
+o script está validando o retorno do post:
+
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/d00b41e9-22ae-4924-b8f5-ce31d45a2c39" />
+
+#### Ocorre um erro na verificação, a API retorna o status 500, mas nesse tipo de verificação de campo obrigatório deveria retornar 400.
+### REQ16
+A requisição envia os dados de post sem um campo obrigatório:
+<img width="1900" height="1079" alt="image" src="https://github.com/user-attachments/assets/f4ba2d92-6129-4107-9f14-13c804290b12" />
+
+o script está validando o retorno do post:
+<img width="1911" height="1079" alt="image" src="https://github.com/user-attachments/assets/686ebd04-5109-421f-98d6-b1f53cdc5724" />
+
+#### Ocorre um erro na verificação, a API retorna o status 500, mas nesse tipo de verificação de campo obrigatório deveria retornar 400.
+### REQ17
+A requisição envia os dados de post sem um campo opcional:
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/a4959914-6796-4f01-b542-1f1259e518fb" />
+
+o script está validando o retorno do post:
+
+<img width="1918" height="1079" alt="image" src="https://github.com/user-attachments/assets/261d1d5a-c149-4bca-9f34-bccb56c4a47e" />
