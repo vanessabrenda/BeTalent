@@ -35,8 +35,8 @@ Dados enviados:
           "checkin" : "2026-05-16",
           "checkout" : "2026-05-20"
       },
-  "additionalneeds" : "duas camas"
-}
+      "additionalneeds" : "duas camas"
+    }
 E a reserva é criada.
 Evidência da requisição enviada:
 
