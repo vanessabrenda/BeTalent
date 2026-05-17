@@ -144,11 +144,13 @@ Assim poderá escolher as dimensões desejadas para teste.
    7. Execute no terminal:  
       `npm install @playwright/test`  
       <img width="1901" height="1011" alt="image" src="https://github.com/user-attachments/assets/e6d451a4-3ec8-4311-baa6-71311bc966fc" />  
-   8. Para rodar os testes sem exibir no navegador:  
-      `npx playwright test`  
-   9. Para rodar os testes exibindo no navegador, configure permissões:  
-      Abra o PowerShell como **administrador** e execute:  
-      `Set-ExecutionPolicy RemoteSigned`  
+    8. Execute o comando a seguir no terminal:  
+      `npx playwright install`
+      Para garantir que funionará corretamente, feche o visual studio code, abra novamente e repita o passo 6.
+    9. Para rodar os testes sem exibir no navegador, execute esse comando:
+      `cd "C:\BeTalent\Testes automatizados - playwright"`
+      Depois esse:
+      `npx playwright test`
    10. No terminal do VSCode, execute:  
        `npx playwright test --headed`  
 
