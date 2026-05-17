@@ -105,7 +105,8 @@ Utilize o documento [1. Cenários de teste - Restful Booker.md](https://github.c
 #### Como executar os testes de responsividade do Sauce Demo:
 Instale o Mozilla Firefox e o Microsoft Edge e abra o ambiente [Sauce Demo](https://www.saucedemo.com/) neles.
 Dentro do ambiente [Sauce Demo](https://www.saucedemo.com/), utilize a ferramenta do navegador pressionando a tecla 'f12' para visualizar o console, depois clique no item destacado em vermelho na imagem abaixo:
-<img width="2546" height="938" alt="image" src="https://github.com/user-attachments/assets/b414ae3b-8ca7-424b-8093-b8a6031e2455" />.
+<img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/73329f95-569b-4f18-bb10-2c1d96fe2b1a" />
+
 Dessa forma poderá escolher as dimensões desejadas para teste. 
 #### Como executar os testes de Acessibilidade do Sauce Demo:
   Utilize o NVDA instalado para ler o ambiente e a extensão WAVE para fazer a análise.
