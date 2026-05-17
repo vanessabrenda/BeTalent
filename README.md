@@ -186,6 +186,7 @@ Consulte [4. Testes de segurança.md](https://github.com/vanessabrenda/BeTalent/
 #### Como executar os testes de performance da API do Restful-Booker:   
 
 Consulte [6. Testes de performance.md](https://github.com/vanessabrenda/BeTalent/blob/main/Restful-Booker%20-%20API%20testing/6.%20Testes%20de%20performance.md).
+
 ---
 
 ## Considerações finais
