@@ -30,7 +30,7 @@
      Abra o terminal (pesquise por cmd na aba de pesquisa e abra a primeira opção);     
      Crie uma pasta (mkdir projeto-playwright);         
      Entre nela (cd projeto-playwright);               
-     Eexecute o comando abaixo para iniciar a instalação: npm init playwright@latest, escolha a opção Javascript pressionando o botão para baixo do teclado e apertando enter, aperte enter por mais 3 vezes;              
+     Execute o comando abaixo para iniciar a instalação: npm init playwright@latest, escolha a opção Javascript pressionando o botão para baixo do teclado e apertando enter, aperte enter por mais 3 vezes;              
      Verifique se a instalação deu certo usando o comando: npx playwright test, a instalação foi feita com sucesso se a seguinte mensagem aparecer:               
       Running 6 tests using 6 workers          
       6 passed (7.6s)          
