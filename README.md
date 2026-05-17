@@ -80,15 +80,8 @@ Arquivo gerado a partir dos testes de automação.
 ### Instalação das ferramentas para automação - UI Testing
 1. Faça o download do [Node.js](https://nodejs.org/pt-br) e instale.  
 2. Faça o download do [Google Chrome](https://www.google.com/intl/pt-BR/chrome/) e instale.  
-3. Instale o Playwright:  
-   - Abra o terminal (cmd).  
-   - Crie uma pasta: `mkdir projeto-playwright`.  
-   - Entre nela: `cd projeto-playwright`.  
-   - Execute: `npm init playwright@latest`.  
-   - Escolha **JavaScript** e pressione Enter três vezes.  
-   - Verifique a instalação: `npx playwright test`.  
-   - Se aparecer “Running 6 tests using 6 workers / 6 passed”, está correto.  
-   - Para abrir o relatório: `npx playwright show-report`.  
+3. Execute o PowerShell como administrador e rode o comando:  
+      `Set-ExecutionPolicy RemoteSigned`  
 4. Instale o [VSCode](https://code.visualstudio.com/download).  
 5. Instale a extensão **Playwright** no VSCode.  
 6. Instale o [Git](https://git-scm.com/install).
