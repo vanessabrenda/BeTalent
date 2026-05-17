@@ -187,5 +187,7 @@ Consultar o documento [4. Testes de segurança.md](https://github.com/vanessabre
 
 Consultar o documento [6. Testes de performance.md](https://github.com/vanessabrenda/BeTalent/blob/main/Restful-Booker%20-%20API%20testing/6.%20Testes%20de%20performance.md)
 
+## Considerações finais 
 
+A quantidade de testes realizados e a complexidade envolvida em cada um desses testes são relativamente altas, para aprimorar questões como: organização, abranger mais cenários, garantir a qualidade dos serviços, é necessário mais tempo e uma documentação de requisitos como base para a análise negocial.
 
