@@ -131,7 +131,7 @@ Dessa forma poderá escolher as dimensões desejadas para teste.
      <img width="1911" height="1079" alt="image" src="https://github.com/user-attachments/assets/fec4d069-f23c-4202-8907-dc5a0fea2057" />
   10. Quando chegar nessa configuração, a automação estará pronta para ser executada:                     
     <img width="1908" height="1021" alt="image" src="https://github.com/user-attachments/assets/99a8e50e-598f-43a1-af75-43fc49fdf0c0" /> 
-**As execuções sem utilizar a automação é só clicar em 'send' em cada request.**
+**As execuções sem utilizar a automação é só clicar em 'send' em cada request.**             
   **Para executar a automação, consultar o documento [5. Automação de API Testing.md](https://github.com/vanessabrenda/BeTalent/blob/main/Restful-Booker%20-%20API%20testing/5.%20Automa%C3%A7%C3%A3o%20de%20API%20Testing.md?plain=1).**
 
 #### Como executar os testes de segurança da API do Restful-Booker:
