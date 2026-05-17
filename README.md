@@ -8,9 +8,10 @@
   5. Instalação das ferramentas UI Testing;
   6. Instalação das ferramentas para Teste de acessibilidade - UI Testing;
   7. Instalação das ferramentas - API Testing;
-  8. Recomendações;
-  9. Como executar os testes realizados;
-  10. Considerações finais.
+  8. Instalação das ferramentas - Teste de responsividade;
+  9. Recomendações;
+  10. Como executar os testes realizados;
+  11. Considerações finais.
      
 ### Descrição 
   1. Validação da plataforma Sauce Demo
@@ -99,6 +100,7 @@ Arquivo json gerado a partir dos testes de automação.
 
 ### Recomendações
   1. Sempre utilizar a opção "Abrir em uma nova aba" ou "Abrir num novo separador", utilizando o botão direito do mouse nos links, principalmente nos vídeos anexados aos documentos.
+     
 ### Como executar os testes realizados:
 #### Como executar os testes manuais do Sauce Demo:
 Utilize o documento [1. Cenários de teste - Restful Booker.md](https://github.com/vanessabrenda/BeTalent/blob/main/Restful-Booker%20-%20API%20testing/1.%20Cen%C3%A1rios%20de%20teste%20-%20Restful%20Booker.md) como base para os testes, siga os cenários criteriosamente no ambiente [Sauce Demo](https://www.saucedemo.com/).
