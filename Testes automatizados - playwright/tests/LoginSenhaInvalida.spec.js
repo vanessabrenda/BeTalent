@@ -1,4 +1,4 @@
-// @ts-check
+
 const { test, expect } = require('@playwright/test');
 const Login = require('../pages/Login');
 
