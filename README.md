@@ -141,17 +141,21 @@ Assim poderá escolher as dimensões desejadas para teste.
       <img width="1498" height="1000" alt="image" src="https://github.com/user-attachments/assets/65b243cd-3d63-4cf1-b457-618fe442c285" />  
    6. Clique em **Terminal** e depois em **New Terminal**.  
       <img width="1909" height="1023" alt="image" src="https://github.com/user-attachments/assets/5e8bf508-3c30-41f6-843e-ecbd52b9e945" />  
-   7. Execute no terminal:  
-      `npm install @playwright/test`  
-      <img width="1901" height="1011" alt="image" src="https://github.com/user-attachments/assets/e6d451a4-3ec8-4311-baa6-71311bc966fc" />  
-    8. Execute o comando a seguir no terminal:  
-      `npx playwright install`        
+   7. Instalando a funcionalidade do Playwright, pressione o enter depois de cada linha a seguir:  
+      `cd "C:\BeTalent\Testes automatizados - playwright"`      
+      `npm init playwright@latest`     
+      Aparecerá uma pergunta em tela, coloque a letra 'y' e execute.       
+      Em seguida perguntará qual linguagem desejada, pressione a tecla para baixo para escolher javascript e execute.     
+      Precisará pressionar a tecla enter por mais 3 vezes ainda.
+   8.  Após a finalização execute:      
+      `npm install @playwright/test`     
+      `npx playwright install`                
       Para garantir que funionará corretamente, feche o visual studio code, abra novamente e repita o passo 6.         
-    9. Para rodar os testes sem exibir no navegador, execute esse comando:         
+   9. Para rodar os testes sem exibir no navegador, execute esse comando:         
       `cd "C:\BeTalent\Testes automatizados - playwright"`      
       Depois esse:       
       `npx playwright test`      
-   10. No terminal do VSCode, execute:  
+   10. Ainda no terminal do VSCode, execute:  
        `npx playwright test --headed`  
 
 #### Como executar os testes de Acessibilidade do Sauce Demo:
