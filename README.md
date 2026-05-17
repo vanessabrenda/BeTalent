@@ -73,7 +73,7 @@ Arquivo json gerado a partir dos testes de automação.
 
   1. Faça o download do Node.js pelo site: https://nodejs.org/pt-br, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
   2. Faça o download do Chrome pelo site: https://www.google.com/intl/pt-BR/chrome/, em seguida instale o arquivo baixado seguindo os passos apresentados em tela;
-  3. Faça a instalação do Playwright seguindo os passos do vídeo a seguir:     
+  3. Faça a instalação do Playwright seguindo os passos a seguir:     
      Abra o terminal (pesquise por cmd na aba de pesquisa e abra a primeira opção);     
      Crie uma pasta (mkdir projeto-playwright);         
      Entre nela (cd projeto-playwright);               
