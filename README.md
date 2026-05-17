@@ -18,7 +18,7 @@
   
 ### Estrutura dos arquivos
 
-** Repositório:   **    
+**Repositório:**    
   
 #### [github/workflows](https://github.com/vanessabrenda/BeTalent/tree/main/.github/workflows)            
 - playwright.yml - arquivo .yml que executa a automação sempre que um pull e um push é realizado no repositório.                   
