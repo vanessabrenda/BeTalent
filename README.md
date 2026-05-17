@@ -106,8 +106,43 @@ Utilize o documento [1. Cenários de teste - Restful Booker.md](https://github.c
 Instale o Mozilla Firefox e o Microsoft Edge e abra o ambiente [Sauce Demo](https://www.saucedemo.com/) neles.
 Dentro do ambiente [Sauce Demo](https://www.saucedemo.com/), utilize a ferramenta do navegador pressionando a tecla 'f12' para visualizar o console, depois clique no item destacado em vermelho na imagem abaixo:
 <img width="1916" height="1079" alt="image" src="https://github.com/user-attachments/assets/73329f95-569b-4f18-bb10-2c1d96fe2b1a" />
-
 Dessa forma poderá escolher as dimensões desejadas para teste. 
+
+#### Como executar os testes de automação do Sauce Demo:
+
+1. Requisitos necessários para execução - Clonar repositório  
+   1. Abra o cmd, pesquise por **cmd** no menu iniciar, e digite o comando:  
+      `cd/`  
+      <img width="971" height="513" alt="image" src="https://github.com/user-attachments/assets/f46cc3da-51a0-49be-91f6-edcd8b523534" />  
+   2. Com o cmd (prompt de comando) aberto, digite sem as aspas:  
+      `git clone https://github.com/vanessabrenda/BeTalent.git`  
+      e pressione a tecla **Enter**.  
+
+2. Abra o Visual Studio Code já configurado com o Playwright  
+   1. Abra o Visual Studio Code já configurado com o Playwright.  
+   2. Clique em **Open Folder...**  
+      <img width="1501" height="997" alt="image" src="https://github.com/user-attachments/assets/0ec8f3e4-5386-4c12-a012-7a6165cc798c" />  
+   3. Abra o caminho `C:\BeTalent\Testes automatizados - playwright`.  
+   4. Clique em **Select folder**.  
+      <img width="1481" height="654" alt="image" src="https://github.com/user-attachments/assets/43b90c9a-240d-4a8a-8087-8611459aac84" />  
+   5. Caso apareça a tela a seguir, clique em **Yes, I trust the authors**.  
+      <img width="1498" height="1000" alt="image" src="https://github.com/user-attachments/assets/65b243cd-3d63-4cf1-b457-618fe442c285" />  
+   6. Clique em **Terminal** e depois em **New Terminal**.  
+      <img width="1909" height="1023" alt="image" src="https://github.com/user-attachments/assets/5e8bf508-3c30-41f6-843e-ecbd52b9e945" />  
+   7. Execute o comando a seguir no terminal:  
+      `npm install @playwright/test`  
+      <img width="1901" height="1011" alt="image" src="https://github.com/user-attachments/assets/e6d451a4-3ec8-4311-baa6-71311bc966fc" />  
+   8. Para rodar os testes sem exibir no navegador, execute:  
+      `npx playwright test`  
+      <img width="1901" height="1011" alt="image" src="https://github.com/user-attachments/assets/dceb0fca-b8d3-45a9-8a9a-c23c7c42efd8" />  
+   9. Para rodar os testes e exibir no navegador, é necessário realizar uma configuração de permissão primeiro:  
+      Execute o PowerShell como administrador e rode o comando:  
+      `Set-ExecutionPolicy RemoteSigned`  
+   10. No terminal do VS Code, execute o comando a seguir:  
+       `npx playwright test --headed`
+
+  https://github.com/user-attachments/assets/327041e0-4258-499f-849b-1759ad9017fc
+
 #### Como executar os testes de Acessibilidade do Sauce Demo:
   Utilize o NVDA instalado para ler o ambiente e a extensão WAVE para fazer a análise.
 #### Como executar os testes de API do Restful-Booker e executar a automação:
@@ -151,4 +186,6 @@ Consultar o documento [4. Testes de segurança.md](https://github.com/vanessabre
 #### Como executar os testes de performance da API do Restful-Booker:
 
 Consultar o documento [6. Testes de performance.md](https://github.com/vanessabrenda/BeTalent/blob/main/Restful-Booker%20-%20API%20testing/6.%20Testes%20de%20performance.md)
+
+
 
